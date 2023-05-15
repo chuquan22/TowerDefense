@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_0
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 140
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e28e677269bcf48ab01d7692bf9818
+      internalID: -1955643363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_1
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 97
+        width: 124
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d8e428dbc59a6429106f391d01c3b8
+      internalID: -441019254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_2
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 92
+        width: 135
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50045fc064b0e2e4d80b6b8be3557b7c
+      internalID: 839061984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_3
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 76
+        width: 165
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8699c1af3d3fbef4cb4783b4340eb97e
+      internalID: 2003808580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_4
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 44
+        width: 231
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0469cceeff582ee468d793cf2663563b
+      internalID: -976030765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_5
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 76
+        width: 164
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5cc4a9b424ee848b4ef65131f9105b
+      internalID: -246037154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_6
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 44
+        width: 232
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2245578f4e03d8a4283921645a18bfb8
+      internalID: -1559786799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_7
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 28
+        width: 262
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a30c7c8732554e9981e89b26dc688
+      internalID: -657404397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_8
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 7
+        width: 306
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3b635a226db4b4793b1c88539e681c
+      internalID: -453874677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_9
+      rect:
+        serializedVersion: 2
+        x: 3516
+        y: 0
+        width: 326
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc3ed994cacbe247801cfbdef49fc47
+      internalID: -1918580229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_10
+      rect:
+        serializedVersion: 2
+        x: 3885
+        y: 44
+        width: 231
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26cda9e931db264c8f216def80c3bb1
+      internalID: -2008723575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_11
+      rect:
+        serializedVersion: 2
+        x: 4190
+        y: 28
+        width: 261
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b347472ad8ec40d4786da683394b658d
+      internalID: 1895957370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_12
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 7
+        width: 305
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb51059a24be4da41870ebdd61447b8e
+      internalID: 48621191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower 08 - Level 03 - Projectile_13
+      rect:
+        serializedVersion: 2
+        x: 4796
+        y: 0
+        width: 327
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf4d2fe4c59eba46a3b081639202c51
+      internalID: -407447509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +408,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tower 08 - Level 03 - Projectile_2: 839061984
+      Tower 08 - Level 03 - Projectile_1: -441019254
+      Tower 08 - Level 03 - Projectile_10: -2008723575
+      Tower 08 - Level 03 - Projectile_4: -976030765
+      Tower 08 - Level 03 - Projectile_8: -453874677
+      Tower 08 - Level 03 - Projectile_5: -246037154
+      Tower 08 - Level 03 - Projectile_0: -1955643363
+      Tower 08 - Level 03 - Projectile_7: -657404397
+      Tower 08 - Level 03 - Projectile_12: 48621191
+      Tower 08 - Level 03 - Projectile_3: 2003808580
+      Tower 08 - Level 03 - Projectile_9: -1918580229
+      Tower 08 - Level 03 - Projectile_6: -1559786799
+      Tower 08 - Level 03 - Projectile_11: 1895957370
+      Tower 08 - Level 03 - Projectile_13: -407447509
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
