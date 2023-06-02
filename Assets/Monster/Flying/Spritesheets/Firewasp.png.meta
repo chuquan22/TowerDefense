@@ -1,0 +1,3039 @@
+fileFormatVersion: 2
+guid: ba27ec2b11a500f40968b7500a6cdbb9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firewasp_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 789
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0508dcee19d835d4e8851af02ed631fe
+      internalID: -782669371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 788
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f559576950796754cadf462198361cdb
+      internalID: -735737917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 790
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b0c0eeec1dc844e86f42736e67d382
+      internalID: -1993089254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 791
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2781c27a1b6221b4bb4822c7a8e9672e
+      internalID: 1790404798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 792
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ff088d3fc22e74790d5ab2818702fa
+      internalID: -146759746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 790
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413658727d7e86246bf326a5b59ab4fc
+      internalID: 241622614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_6
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 789
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40eb40ad6909a3047acb49d69e7ea0c1
+      internalID: 265164176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_7
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 788
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69559ef762845e4ba3d5afff635e722
+      internalID: -1361309816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 790
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc68ecd739aa42b4090811adb3a5c9bd
+      internalID: -1280931124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 791
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1061b58f91fcfda43ab147cec2eac4ca
+      internalID: -66093993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_10
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 792
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa53e71e09d12f04787e59812f089424
+      internalID: -81540645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_11
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 790
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc46bfb3d334e749901071708d6a380
+      internalID: 798877471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 695
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579531be36aa56045bd5c96de3ff9806
+      internalID: 1552100973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 694
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22210bf27b59b2840a39c19e0ea64dd9
+      internalID: -2070597995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 695
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0275d9616a57a449c827d1b2281d67
+      internalID: 1046595029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 696
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f635ddc23496d14499a3674023ceb2f
+      internalID: -94015608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 697
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33affd5692dab440bcffc8d20b38fb2
+      internalID: 1641936982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_17
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 696
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d5bb5c618519c4794e123e399c93fe
+      internalID: -1088447378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_18
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 696
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f855190144aa15f47a13d5fd440bf0a7
+      internalID: -1636066680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_19
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 695
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8343dccffd13e82468235be4a27003dd
+      internalID: 2087516179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_20
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 694
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a718ef2379416e42bd40d12886920c5
+      internalID: 1774428396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_21
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 695
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320b9a3fc06bf234a9bb85a9544bd3df
+      internalID: 803178772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_22
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 696
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a4ba4d7d68a049be75c827452725e
+      internalID: -1215666411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_23
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 697
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7af6beeff8104f499156cb9adb5114a
+      internalID: 1577940763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_24
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 696
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0274eeb103ce994b8c9ae0ec9bee7aa
+      internalID: 1619234821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_25
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 696
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7883e586ecac347a8b3f6aadf23b43
+      internalID: 1376125444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_26
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 615
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0053d634695b949afff9e552fafad5
+      internalID: 1501367453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_27
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 594
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8f78c10ade6294cbb664c365d440cf
+      internalID: -1900695215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_28
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 593
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4ebc3d5f7b612468669def56c72db1
+      internalID: 2086475649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_29
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 613
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4e29c68d214474aa0a23d04548a51f
+      internalID: -1328093173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_30
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 617
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d5f96335fc48264cb3a3071bedb5a01
+      internalID: -401392009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_31
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 593
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3c17f88133267418004fff739c472c
+      internalID: 68430117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_32
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 615
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82622d3f4a241ac46aa4ec55d3eb69ec
+      internalID: -434195345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_33
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 594
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad964d9cb1e456419be24ae7bf577ac
+      internalID: 1666482632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_34
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 593
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4230c93e76e1764d8dfff5a3261c6c7
+      internalID: 448331694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_35
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 613
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dcadb895a83904eaa3ed2564984b90
+      internalID: -1744044288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_36
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 617
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78219583bab597243bc4080df50ccdf6
+      internalID: -940817544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_37
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 593
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e98c1a194c9c184aa2fd9555ac51941
+      internalID: -199890850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_38
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 606
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981ed5acd6dbc4b4aaed55fdb56219d5
+      internalID: 2130338609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_39
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 610
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0772e79233e63684593b35d3764d716b
+      internalID: -372891027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_40
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 606
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c4c0f48d1c1d5408787773cc60c51a
+      internalID: -1734587643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_41
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 610
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3aa229f4d77d6944874163661af86d1
+      internalID: 2041061177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_42
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 601
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbb56dddc40d1c48bae9d14842b60ec
+      internalID: 1833545410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_43
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 597
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b89d858dc36ab4e93f8d8fa6c927c9
+      internalID: -600353327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_44
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 603
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf04845e9bde11942bfbdb581dc854b6
+      internalID: -2111553098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_45
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 601
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af9a17e70d861b439175ed3463a8838
+      internalID: -320666196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_46
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 597
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b48ea5d44c340449e5fe7e64aeb9b6
+      internalID: 733225818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_47
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 603
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f659819392477fd43b4a724ee06355ef
+      internalID: 1205345779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_48
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 592
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551a4e62b72ccb4e8162be77bf1420e
+      internalID: 911223486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_49
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 596
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb29f15767a28824cb2370e94a890f6b
+      internalID: -954116591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_50
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 596
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a85099ba1b9084439e9fa76aeef934a
+      internalID: 1810490198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_51
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 592
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8227516e2900bec428345dfe473c0cfc
+      internalID: -1762865564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_52
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 596
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1ac6e3558d5e54284e0097ad730d54
+      internalID: -674124521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_53
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 596
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff5d6f0af6e0564cb7172684e71d261
+      internalID: 748842389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_54
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 592
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1283a20e804c8a6449099fed3e7cd96d
+      internalID: 479916050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_55
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 592
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ef3ef4433000b44bef403dc6626053
+      internalID: -1300613745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_56
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 501
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0d66cb9c4e759469fe420675b2c429
+      internalID: 1901192273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 500
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f477a8be330728a44ad6b9f60976193d
+      internalID: 1300175316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 501
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b000b93e374fa84bac82400c005254b
+      internalID: 2068834851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_59
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 502
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43f61e44decda14ca0e8e2e0bdfa0d0
+      internalID: -1096191814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_60
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 501
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dfcc39532d8e64da920af55af9afd9
+      internalID: 341687942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_61
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 500
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab060072ad909642811fe6cbba15099
+      internalID: -924147307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_62
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 501
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1703e2808a2ad6f4380dde5c1c83fe58
+      internalID: -1601615189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_63
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 502
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe2b1589aab5e446a8abd61c0797333
+      internalID: 1793476461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 407
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36072615835e4f4fa41506a93c3efc2
+      internalID: 452158912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_65
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 406
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba92ddc5e96fc044698bc97589ef7b1f
+      internalID: -1609230089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_66
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 407
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a191e3e54c9603b48b91de825354065f
+      internalID: 5390043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 408
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188ff86c18540cb4fb9d1d01dcebf36c
+      internalID: 1126939914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_68
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 407
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b341e754358741242b7f1ec60f7b79d0
+      internalID: -442551354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_69
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 406
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd9c145dbc8ff247beb59f60eb8876b
+      internalID: -1879181036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_70
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 407
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff151b19212757645a5b1a99559f5923
+      internalID: 1652643453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_71
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 408
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f719f4a20f35048bc35b3252bfac93
+      internalID: 125727237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_72
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 322
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61307488c48b5241964e95553dcaab7
+      internalID: 1518260505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_73
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 305
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba953e2f954a844d9d6058c471f2753
+      internalID: 1605850563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_74
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 305
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8501840a91841ad418a39ceb0305525d
+      internalID: 237324748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_75
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 325
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b00485f57fb6e40a46544e707cd894
+      internalID: 82686367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_76
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 318
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1371fb133fb76f54d842b259dc6d1aa2
+      internalID: -2068972622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_77
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 322
+        width: 56
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a74e0dc8a89dc48b19f6f6bd7d3356
+      internalID: -1265032210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_78
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 305
+        width: 56
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72ac294322dd9b41bbc07f6fc45df72
+      internalID: -558102221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_79
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 305
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5893cb81f28010949b425c32c1b3723f
+      internalID: 1768049407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_80
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 325
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed995c1a7df2418478053396723bec24
+      internalID: -1051832651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_81
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 318
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaec7836cdaccd640ab82ad9b6df320e
+      internalID: 1421134545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_82
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 315
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b841ebca0e3ae43888d08cc2472528
+      internalID: -1200501458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_83
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 313
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e37a4dd3b8f054e8ee744f8accd52f
+      internalID: -1363094483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_84
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc4c2d88b5b3a14fb57713ae6595b48
+      internalID: -1889934558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_85
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 315
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056d8f63ac9b79944b7e726ffe4fa16b
+      internalID: -1532996735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_86
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 313
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a614c22da5fd3c34eae26b3cc352ae2c
+      internalID: -1857817150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_87
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 309
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7aa501b3dae63428451f96f9b96992
+      internalID: 389086921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_88
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 308
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb4037b05bc7d44c90ca5a5928053a4
+      internalID: 1345285734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_89
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 304
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63157b2dbd7d1f49bbb2106121dc591
+      internalID: 1050587992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_90
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 308
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6f1543518dda24e83456a886fc8dd5
+      internalID: -975223511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_91
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 304
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc4dd697cec7b24c99c66c443f6d5ee
+      internalID: -1998468502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_92
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 304
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d1f31948b7430449aab111fb29bbbd
+      internalID: -908277573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_93
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 304
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b7b032c768fc54cacf1ecdaf457d82
+      internalID: 1802235933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_94
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 213
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ac763eae886084f8a12cbc2d3200f9
+      internalID: -1639035925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_95
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 215
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc1e9d3e319bbf438ef1a77ca070735
+      internalID: -2010479751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_96
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 216
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0fcc2f22172a44dbd17b318b7b2c2e
+      internalID: -76745234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_97
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 216
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b582c3c43ff685c4c83062319726642c
+      internalID: 673676233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_98
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 212
+        width: 64
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ccc08e7c03a9a4cb6403ab40bdd206
+      internalID: -262872537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_99
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 207
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364fc0093de06054ba3bc940359685c3
+      internalID: 249904624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_100
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 205
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc09a534d92e7ea40b09c7d1c0ef6c63
+      internalID: -1922516942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_101
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 204
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000cff7b40fc97c43a41d33055ab756b
+      internalID: 1661311358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_102
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 203
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3ad060b6c0a1446aec476f5cbc1e1a
+      internalID: -1451233661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_103
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 203
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c492d1a5057fd748b66f8d98f1d6a53
+      internalID: -1822522840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_104
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 203
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7635ff9104de3f540ab8621d16662c40
+      internalID: -1127063566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_105
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 208
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b5d2b515ad22c4a9f899fce6f76703
+      internalID: 530714521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_106
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 119
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29035e8741069f741b02bd47cf7d05e3
+      internalID: 370049431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_107
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 121
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bc68f0a35152a428d64358192a9465
+      internalID: 78992159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_108
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 122
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad2f64fb409cac41ba1f0ac2ce078d1
+      internalID: 712893479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_109
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 122
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeed96b24b699bb409b5870731780170
+      internalID: 1607843941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_110
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 118
+        width: 64
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902412d71dc43334b8bc51eab7f42750
+      internalID: 212013864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_111
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 111
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cdde505264f684fb66d02c978ae5e3
+      internalID: -395843039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_112
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 109
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502698dd1e82ae943b2bbc252943503a
+      internalID: 1765029349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_113
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 108
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d31e3deec79a041b3509408d1bed25
+      internalID: -522667669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_114
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 109
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c100b5ca24631c479d00cc7ef6caae4
+      internalID: -742579254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_115
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 107
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc035310413aa146a55c0402f2503a4
+      internalID: -1500037751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_116
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 107
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611e7aff95f39a44fa42be47cae624e4
+      internalID: -624777336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_117
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 112
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f98885982c7e24882f5020dc960910
+      internalID: 54546201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_118
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 107
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5762d7d8265e03b4e86b52f1746ea841
+      internalID: 591764834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_119
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 108
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c8e85a03069e641b92e64e6ed1c9b7
+      internalID: -1808942280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_120
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59afe23a572a5ff44aa44865a6108832
+      internalID: -688643686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_121
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 21
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59858e4065eddb44db04fa48b5703564
+      internalID: 1712883509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_122
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 22
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df8498a7eecf864dac0a24fe5b4711d
+      internalID: 841185717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_123
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 43
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43c17c4260572f4f879a816a34739f0
+      internalID: -649940939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_124
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 38
+        width: 56
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fb07fdba07b194ab64ea916a3d8312
+      internalID: -1010674626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_125
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 32
+        width: 56
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f22830ff37cf745bf79ced1bad1946
+      internalID: -863330916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_126
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 12
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a71aff8f53056419ca841b4a940b0b
+      internalID: 1597106938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_127
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c28a9e970e1e4fa2f7b89f63439b5
+      internalID: -1376717770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_128
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497e7deabc7fd4e479dfddbc6237853b
+      internalID: 2078680098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_129
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2268fac638ee89b46ae00b59128d9c0b
+      internalID: 110893126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_130
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e0797d85308f74282b3f1f5329efaa
+      internalID: 371128705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firewasp_131
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 11
+        width: 56
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a277108934642e347a0e67adaafa9505
+      internalID: 502267624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Firewasp_0: -782669371
+      Firewasp_48: 911223486
+      Firewasp_109: 1607843941
+      Firewasp_14: 1046595029
+      Firewasp_104: -1127063566
+      Firewasp_69: -1879181036
+      Firewasp_82: -1200501458
+      Firewasp_90: -975223511
+      Firewasp_15: -94015608
+      Firewasp_24: 1619234821
+      Firewasp_86: -1857817150
+      Firewasp_52: -674124521
+      Firewasp_45: -320666196
+      Firewasp_47: 1205345779
+      Firewasp_37: -199890850
+      Firewasp_98: -262872537
+      Firewasp_112: 1765029349
+      Firewasp_75: 82686367
+      Firewasp_65: -1609230089
+      Firewasp_113: -522667669
+      Firewasp_129: 110893126
+      Firewasp_8: -1280931124
+      Firewasp_54: 479916050
+      Firewasp_71: 125727237
+      Firewasp_122: 841185717
+      Firewasp_81: 1421134545
+      Firewasp_61: -924147307
+      Firewasp_126: 1597106938
+      Firewasp_64: 452158912
+      Firewasp_44: -2111553098
+      Firewasp_116: -624777336
+      Firewasp_60: 341687942
+      Firewasp_89: 1050587992
+      Firewasp_55: -1300613745
+      Firewasp_94: -1639035925
+      Firewasp_58: 2068834851
+      Firewasp_59: -1096191814
+      Firewasp_83: -1363094483
+      Firewasp_23: 1577940763
+      Firewasp_127: -1376717770
+      Firewasp_12: 1552100973
+      Firewasp_36: -940817544
+      Firewasp_123: -649940939
+      Firewasp_28: 2086475649
+      Firewasp_18: -1636066680
+      Firewasp_21: 803178772
+      Firewasp_57: 1300175316
+      Firewasp_40: -1734587643
+      Firewasp_93: 1802235933
+      Firewasp_99: 249904624
+      Firewasp_91: -1998468502
+      Firewasp_111: -395843039
+      Firewasp_5: 241622614
+      Firewasp_39: -372891027
+      Firewasp_49: -954116591
+      Firewasp_19: 2087516179
+      Firewasp_22: -1215666411
+      Firewasp_33: 1666482632
+      Firewasp_87: 389086921
+      Firewasp_107: 78992159
+      Firewasp_117: 54546201
+      Firewasp_105: 530714521
+      Firewasp_76: -2068972622
+      Firewasp_124: -1010674626
+      Firewasp_84: -1889934558
+      Firewasp_4: -146759746
+      Firewasp_108: 712893479
+      Firewasp_31: 68430117
+      Firewasp_2: -1993089254
+      Firewasp_3: 1790404798
+      Firewasp_30: -401392009
+      Firewasp_68: -442551354
+      Firewasp_46: 733225818
+      Firewasp_62: -1601615189
+      Firewasp_131: 502267624
+      Firewasp_102: -1451233661
+      Firewasp_106: 370049431
+      Firewasp_35: -1744044288
+      Firewasp_95: -2010479751
+      Firewasp_51: -1762865564
+      Firewasp_26: 1501367453
+      Firewasp_32: -434195345
+      Firewasp_63: 1793476461
+      Firewasp_74: 237324748
+      Firewasp_101: 1661311358
+      Firewasp_53: 748842389
+      Firewasp_72: 1518260505
+      Firewasp_119: -1808942280
+      Firewasp_85: -1532996735
+      Firewasp_70: 1652643453
+      Firewasp_118: 591764834
+      Firewasp_9: -66093993
+      Firewasp_29: -1328093173
+      Firewasp_88: 1345285734
+      Firewasp_1: -735737917
+      Firewasp_13: -2070597995
+      Firewasp_78: -558102221
+      Firewasp_7: -1361309816
+      Firewasp_10: -81540645
+      Firewasp_79: 1768049407
+      Firewasp_77: -1265032210
+      Firewasp_96: -76745234
+      Firewasp_92: -908277573
+      Firewasp_20: 1774428396
+      Firewasp_34: 448331694
+      Firewasp_11: 798877471
+      Firewasp_103: -1822522840
+      Firewasp_115: -1500037751
+      Firewasp_128: 2078680098
+      Firewasp_43: -600353327
+      Firewasp_110: 212013864
+      Firewasp_114: -742579254
+      Firewasp_6: 265164176
+      Firewasp_97: 673676233
+      Firewasp_17: -1088447378
+      Firewasp_41: 2041061177
+      Firewasp_42: 1833545410
+      Firewasp_80: -1051832651
+      Firewasp_16: 1641936982
+      Firewasp_67: 1126939914
+      Firewasp_27: -1900695215
+      Firewasp_66: 5390043
+      Firewasp_100: -1922516942
+      Firewasp_121: 1712883509
+      Firewasp_25: 1376125444
+      Firewasp_125: -863330916
+      Firewasp_38: 2130338609
+      Firewasp_56: 1901192273
+      Firewasp_50: 1810490198
+      Firewasp_73: 1605850563
+      Firewasp_130: 371128705
+      Firewasp_120: -688643686
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
