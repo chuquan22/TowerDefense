@@ -10,7 +10,9 @@ namespace Assets.Script
     {
         public void Attack();
 
-        public void UpdateTower();
+        public void UpgradeTower();
+
+        public void SellTower();
 
     }
 }
