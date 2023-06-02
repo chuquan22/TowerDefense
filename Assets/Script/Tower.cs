@@ -1,18 +1,26 @@
 using Assets.Script;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class Tower : MonoBehaviour , ITower
+public abstract class Tower : MonoBehaviour, ITower
 {
-    public double attackRange; // Range attacking
+    [SerializeField]
     public double attackDamage;
+    [SerializeField]
+    public double attackRange; // Range attacking
+    [SerializeField]
     public float attackSpeed; // speed atteacking per time
 
+    [SerializeField]
     public double boughtPrice;
+    [SerializeField]
     public double sellPrice;
 
-    
+
     protected Timer cooldownTimer;
 
     public int towerLevel;
@@ -23,13 +31,15 @@ public class Tower : MonoBehaviour , ITower
     [SerializeField]
     public GameObject prefabBullet;
 
-   
 
-    private void Start()
+
+    virtual protected void Start()
     {
+        SetConfigurationDataFields(GetConfigurationFromText());
         cooldownTimer = gameObject.AddComponent<Timer>();
         cooldownTimer.Duration = attackSpeed;
-        
+
+
     }
     public void Attack()
     {
@@ -43,7 +53,7 @@ public class Tower : MonoBehaviour , ITower
 
     public virtual void UpgradeTower()
     {
-        
+
     }
 
     void Update()
@@ -63,7 +73,7 @@ public class Tower : MonoBehaviour , ITower
         //}
     }
 
-    
+
 
     // returns the current enemy for the tower to attack
     //Monster GetEnemy()
@@ -76,7 +86,7 @@ public class Tower : MonoBehaviour , ITower
 
     //}
     // attacks the curEnemy
- 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))
@@ -97,5 +107,30 @@ public class Tower : MonoBehaviour , ITower
         // money += sellPrice;
         Destroy(gameObject);
 
+    }
+
+    protected void SetConfigurationDataFields(string csvValues)
+    {
+        string[] values = csvValues.Split(',');
+
+        try
+        {
+            attackDamage = double.Parse(values[0]);
+            attackRange = double.Parse(values[1]);
+            attackSpeed = float.Parse(values[2]);
+
+            boughtPrice = double.Parse(values[3]);
+            sellPrice = double.Parse(values[4]);
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+        }
+    }
+
+    public virtual string GetConfigurationFromText()
+    {
+        return null;
     }
 }
