@@ -88,7 +88,6 @@ public class MonsterSpawner : MonoBehaviour
         {
             monster = 0;
         }
-        Debug.Log("Spawn Monster");
         GameObject prefabToWpawn = MonsterPrefabs[monster];
         Instantiate(prefabToWpawn, LevelManager.main.startPoint.position, Quaternion.identity);
         
