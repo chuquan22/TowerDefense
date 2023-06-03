@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,2149 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Flying Locust_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 523
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746f16d9d6590e44d86b975d96dc537e
+      internalID: -1681983938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 521
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc252fc14e4603140a1f21837f75b94c
+      internalID: 1411006376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 523
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11d3ece03968f4469fd0a73c3ca0ed7
+      internalID: -1824262131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 525
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40094c7d1cea7084ea2738d64205d7ea
+      internalID: -2140843913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 526
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dac738576e40b245bb0314e8027c9ad
+      internalID: -1345242101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 525
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840aaba10e057024f9fa14d4cc0c5954
+      internalID: 1572609671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 523
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1469ee15bb67a43a22296df56ebaf1
+      internalID: 2047357752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 521
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1059d635825aa064fa69cdf64e199e80
+      internalID: 496022802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_8
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 523
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a067a2523c633c342aad2e061f8019ad
+      internalID: 827136466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_9
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 525
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4884b032b82774186f9452ed3e71a4
+      internalID: -1679286600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_10
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 526
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087af755c7e0d03419ee11cb543b984f
+      internalID: 981071996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_11
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 525
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69f24c944a93cc4191eba1ca5843c26
+      internalID: -1131361160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 459
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc5df770aafa514b9803ed7e985afdf
+      internalID: 1130868967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 457
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05579d774a2bbd6488c581446ed2db0b
+      internalID: 1814357338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_14
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 459
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d649803c47094694ba61eb473df63cb8
+      internalID: 1839293209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_15
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 461
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05db04b51a446aa469a8c82b9f96490c
+      internalID: 1345660054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 463
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba658e3ddf543c4b9f33ef99c5813cc
+      internalID: -768136155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 461
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbee79063a1a88c4a8597aee3562f761
+      internalID: -1573541055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 459
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2374e168369f055478fc14f4654e79db
+      internalID: 1442275068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_19
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 457
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a86f42d0c63834c8754bab7a9ddf88
+      internalID: -450648468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_20
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 459
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e0ceccee93312429746342e019d442
+      internalID: -496947358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_21
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 461
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0027012985a2d46b55012e8df79880
+      internalID: 470569144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 463
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fd4e5d099a96b459dce3a8ddf18103
+      internalID: 726884981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_23
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 461
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d31cdeb0b9c36244942239334099948
+      internalID: -1513803526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 395
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d815f3ceaa990964f9ff30d256bdcf9f
+      internalID: 1302375613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_25
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 393
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe719fa1b86aa94eb001270f272e18f
+      internalID: 1035229182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_26
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 395
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173c20f19bdf3f9428651d5f85fd5df2
+      internalID: 797606886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_27
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 398
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5208ce6ed9b5c419e4ee98b9e32d15
+      internalID: 1974877455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_28
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 399
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f211f1e6579d8439177f24d8c36a23
+      internalID: -1966434371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_29
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 397
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b33221f003c014188483b1f9d5736f
+      internalID: 553737753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_30
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 395
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3339c4a80b76ac41bcece344c8c7538
+      internalID: 367980086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_31
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 393
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f366f74deae5540849841b75c7b1bc
+      internalID: -1938139330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_32
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 395
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6941e694c68570b46907148d0fee819c
+      internalID: -1360254244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_33
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 398
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea823418f20dc647b1797aba5cace1a
+      internalID: 1929863415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_34
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 399
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db8e5bb29a7c3e448837e8c79e648bf
+      internalID: -913163660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_35
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 397
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee2e7c0dff92564e9c2e3dabfb62e52
+      internalID: 1778210475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 331
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e209a9f8aa3b5746808becf6944cc4f
+      internalID: 376973517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_37
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 329
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc25915662e1eb448d906e4958bb204
+      internalID: 1140364471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_38
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 331
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106edf3a404c63b42929bdbe3325066f
+      internalID: -336244472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 333
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c2f8b9813bd7645b32f2e164330dc7
+      internalID: 419875006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 331
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb010f23daee2842a9ea02daa6e773f
+      internalID: -1789618044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_41
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 329
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dda52e9495a30e46997550f383c8452
+      internalID: 1427636776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_42
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 331
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6907d42ff9f4cd4c9b4c38461db5910
+      internalID: 753560867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_43
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 333
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0803e3b3338512b409518d6c36a04a92
+      internalID: -2130068808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 267
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bab59b95555a214a9759f3f2846d1b7
+      internalID: 1356846135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_45
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 265
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddaa2264e78b3e48addd6dc7e39a9e1
+      internalID: 2020142438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_46
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 267
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70db12af911ead4c9909f9f24c2be5b
+      internalID: 1124478573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_47
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 269
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1bfd3b846adb94dbbcd7d0ed3e072a
+      internalID: -1639677771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_48
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 267
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876f27327a209674ab0794d0b2841d8f
+      internalID: 388202078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_49
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 265
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29298028372196f4eb1e911fd8a41423
+      internalID: 696233266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_50
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 267
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97c96ec06a37724f962141c713e85c5
+      internalID: 1810342762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_51
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 269
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3842ab86a0f5444bbd23fe2e544f6b9
+      internalID: -131517541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_52
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 203
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8fd423d5e93964a964ecbbf631ae72
+      internalID: 1052005804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_53
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 201
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19118986aa3e7024d9bbc58a90b90f66
+      internalID: 542881815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_54
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 203
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541e48cfd5eab044aa01f79b6864661f
+      internalID: 484979656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_55
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 205
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69563c72e40eef947be14f261642286b
+      internalID: -422963942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_56
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 203
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b321bf78215dc645b5c1213cb8b57c8
+      internalID: -814588291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_57
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 201
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40b7f3318882994481d128ec2f0c5d1
+      internalID: -1959764309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_58
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 203
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5773b458c6ae1864eb343171f5701d74
+      internalID: 1482870852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_59
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 205
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb0c1ea4aa3eb14fa2892c2a9a817f4
+      internalID: 565336174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_60
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 139
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c06e7453ab17441adb4119a8b49a70
+      internalID: 349166694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_61
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 137
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9dd7522f1b51445a5fe110797a716b
+      internalID: 538935106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_62
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 139
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83d4bfb89897b948a2f040077a0dd67
+      internalID: -1073746875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 141
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6abf6540e9ae6b4ba76f71826088cb2
+      internalID: -1040183932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_64
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 142
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbfcd76efcc57842ac239e3e200dbc8
+      internalID: -602478266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_65
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 139
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940b00eb177d70f499e0ad6ee8999d17
+      internalID: -111665913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_66
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 135
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2a49262cc46d345b87e251b264ac57
+      internalID: 238156855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_67
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 131
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827560ac3bc968f438257ae18eca9419
+      internalID: 2031873188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_68
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 128
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdc551ba86abd74d984df2f131c6cd6
+      internalID: -891833803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_69
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 129
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6061bf434655a47a640f6d089d8ad0
+      internalID: -1718346219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_70
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 129
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873a2f7916657e24da844eef21e95bf5
+      internalID: 1360608378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_71
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 130
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8bba047e572994bb387d8605e49d10
+      internalID: 1071811080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_72
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 130
+        width: 36
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6965080852600374aa3eb590adf72393
+      internalID: -866295285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_73
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 131
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e560d7794384b4fa7ec0095e8285e7
+      internalID: -1103736985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_74
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 75
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d3bee585314f54fa4eedcf432e9bbb
+      internalID: 1624749908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_75
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 73
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbcd8cd49e987642a6314e1b73bd26c
+      internalID: -1985672087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_76
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 75
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644bcf5e3510d7f4caa8f93c9fc192ce
+      internalID: 2088966504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 77
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19235bfd7c085d4e94a896b03bb3d0b
+      internalID: -652833123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_78
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 78
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0ce5bef67387548b88581ba3964902
+      internalID: 1243916052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_79
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 75
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb39df734f491714a8b1ad7dd2750ed0
+      internalID: -440646288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_80
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 71
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28accce683cf50488d5b59c325cf31a
+      internalID: 1362086671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_81
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 67
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485a37c8ac3bc3749aef2edb5ff5bff6
+      internalID: -250457098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_82
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 64
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3c1acb3cbc5f64aabe6fc2ff8c92dd
+      internalID: 1789302512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_83
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 65
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101467cc176b25c47871a497c3a5ebcf
+      internalID: 788509555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_84
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 65
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef91feb6836d4f44caeff21f85849152
+      internalID: 1278003386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_85
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 66
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a814a4854bf154b8b143e80f24c350
+      internalID: 1129471071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_86
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 66
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f257024693926cf4283829c9095f3952
+      internalID: 1235679680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_87
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 66
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d37e9cdc77fec343809671604b826a6
+      internalID: 103713608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_88
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 11
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e88b84cc6018854981477d8d7f587c6
+      internalID: 83056620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_89
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 9
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16da4a223825c448910893f093f3d0f
+      internalID: 375268045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_90
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 11
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb6494309735cd4092d544c42ffa4ed
+      internalID: -354567020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_91
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 13
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803711909c0fdf94dbb9664da32d3cb6
+      internalID: -292694550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_92
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 14
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6027bbcfd6041419f1570b2a9f93ac
+      internalID: -792188930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_93
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 11
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449afeded03e5614da42680d1fecf7e4
+      internalID: 1468600985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_94
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 7
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280aa76ce765f0b4ea7f7c4d916bec4a
+      internalID: -506702101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_95
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e1d0eecf432cc459afc07c0e7041f7
+      internalID: 496715284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_96
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ead2defc8cbe747a6941313a2a8243
+      internalID: 1497573200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_97
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c85cc42f3ee23545adde9c39290935a
+      internalID: -741045257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_98
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1024ee6ada204824fa11c0c1454860b4
+      internalID: -1097591273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_99
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 2
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77af2428aa9a1c940ba5ea34cfb5b24c
+      internalID: -2115573627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_100
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 2
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a139268f93ef3304a92a7d73a9feb402
+      internalID: -687617301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flying Locust_101
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 3
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef0cad98bd8f0b46b368cd95be11b53
+      internalID: -366235032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +2268,109 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Flying Locust_52: 1052005804
+      Flying Locust_25: 1035229182
+      Flying Locust_18: 1442275068
+      Flying Locust_21: 470569144
+      Flying Locust_37: 1140364471
+      Flying Locust_94: -506702101
+      Flying Locust_93: 1468600985
+      Flying Locust_100: -687617301
+      Flying Locust_2: -1824262131
+      Flying Locust_22: 726884981
+      Flying Locust_67: 2031873188
+      Flying Locust_86: 1235679680
+      Flying Locust_58: 1482870852
+      Flying Locust_92: -792188930
+      Flying Locust_10: 981071996
+      Flying Locust_84: 1278003386
+      Flying Locust_6: 2047357752
+      Flying Locust_20: -496947358
+      Flying Locust_4: -1345242101
+      Flying Locust_73: -1103736985
+      Flying Locust_62: -1073746875
+      Flying Locust_48: 388202078
+      Flying Locust_69: -1718346219
+      Flying Locust_88: 83056620
+      Flying Locust_34: -913163660
+      Flying Locust_98: -1097591273
+      Flying Locust_33: 1929863415
+      Flying Locust_29: 553737753
+      Flying Locust_74: 1624749908
+      Flying Locust_40: -1789618044
+      Flying Locust_44: 1356846135
+      Flying Locust_81: -250457098
+      Flying Locust_50: 1810342762
+      Flying Locust_95: 496715284
+      Flying Locust_1: 1411006376
+      Flying Locust_19: -450648468
+      Flying Locust_61: 538935106
+      Flying Locust_72: -866295285
+      Flying Locust_47: -1639677771
+      Flying Locust_78: 1243916052
+      Flying Locust_90: -354567020
+      Flying Locust_97: -741045257
+      Flying Locust_65: -111665913
+      Flying Locust_26: 797606886
+      Flying Locust_31: -1938139330
+      Flying Locust_96: 1497573200
+      Flying Locust_68: -891833803
+      Flying Locust_35: 1778210475
+      Flying Locust_0: -1681983938
+      Flying Locust_9: -1679286600
+      Flying Locust_14: 1839293209
+      Flying Locust_13: 1814357338
+      Flying Locust_15: 1345660054
+      Flying Locust_39: 419875006
+      Flying Locust_70: 1360608378
+      Flying Locust_17: -1573541055
+      Flying Locust_82: 1789302512
+      Flying Locust_23: -1513803526
+      Flying Locust_60: 349166694
+      Flying Locust_85: 1129471071
+      Flying Locust_41: 1427636776
+      Flying Locust_46: 1124478573
+      Flying Locust_51: -131517541
+      Flying Locust_43: -2130068808
+      Flying Locust_71: 1071811080
+      Flying Locust_38: -336244472
+      Flying Locust_57: -1959764309
+      Flying Locust_53: 542881815
+      Flying Locust_16: -768136155
+      Flying Locust_12: 1130868967
+      Flying Locust_87: 103713608
+      Flying Locust_64: -602478266
+      Flying Locust_66: 238156855
+      Flying Locust_5: 1572609671
+      Flying Locust_83: 788509555
+      Flying Locust_54: 484979656
+      Flying Locust_63: -1040183932
+      Flying Locust_101: -366235032
+      Flying Locust_80: 1362086671
+      Flying Locust_32: -1360254244
+      Flying Locust_89: 375268045
+      Flying Locust_59: 565336174
+      Flying Locust_24: 1302375613
+      Flying Locust_49: 696233266
+      Flying Locust_91: -292694550
+      Flying Locust_55: -422963942
+      Flying Locust_36: 376973517
+      Flying Locust_77: -652833123
+      Flying Locust_28: -1966434371
+      Flying Locust_8: 827136466
+      Flying Locust_11: -1131361160
+      Flying Locust_30: 367980086
+      Flying Locust_79: -440646288
+      Flying Locust_76: 2088966504
+      Flying Locust_75: -1985672087
+      Flying Locust_7: 496022802
+      Flying Locust_27: 1974877455
+      Flying Locust_45: 2020142438
+      Flying Locust_99: -2115573627
+      Flying Locust_42: 753560867
+      Flying Locust_56: -814588291
+      Flying Locust_3: -2140843913
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
