@@ -8,12 +8,15 @@ public class MonsterMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
+    private Animator animator;
+    
 
     private Transform target;
     private int pathIndex = 0;
     private void Start()
     {
         target = LevelManager.main.path[pathIndex];
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -31,6 +34,23 @@ public class MonsterMovement : MonoBehaviour
                 target = LevelManager.main.path[pathIndex];
             }
         }
+
+
+
+        //if(transform.position.y < target.position.y && transform.position.x == target.position.x) 
+        //{
+        //    animator.SetInteger("statechange", 1);
+        //}else if (transform.position.y > target.position.y && transform.position.x == target.position.x)
+        //{
+        //    animator.SetInteger("statechange", -1);
+        //}else if (transform.position.x > target.position.x && transform.position.y > target.position.y)
+        //{
+        //    animator.SetInteger("statechange", 0);
+        //}else
+        //{
+        //    transform.localScale.Set(-1,1,1);
+        //    animator.SetInteger("statechange", 0);
+        //}
     }
 
     private void FixedUpdate()

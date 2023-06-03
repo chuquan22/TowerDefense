@@ -16,6 +16,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private float MonsterPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
+    [SerializeField] private GameObject HP;
 
     [Header("Events")]
     public static UnityEvent onMonsterDestroy = new UnityEvent();
@@ -26,6 +27,7 @@ public class MonsterSpawner : MonoBehaviour
     private float timeSinceLastSpawn;
     private int monsterAlive;
     private int MonsterLeftToSpawn;
+    private int monster = 0;
     private bool isSpawning = false;
 
     private void Awake()
@@ -73,7 +75,8 @@ public class MonsterSpawner : MonoBehaviour
 
     private void EndWave()
     {
-        isSpawning= false;
+        monster++;
+        isSpawning = false;
         timeSinceLastSpawn = 0f;
         currentWave++;
         StartCoroutine(StartWave());
@@ -81,9 +84,14 @@ public class MonsterSpawner : MonoBehaviour
 
     private void SpawnMonster()
     {
+        if(monster > MonsterPrefabs.Length)
+        {
+            monster = 0;
+        }
         Debug.Log("Spawn Monster");
-        GameObject prefabToWpawn = MonsterPrefabs[0];
+        GameObject prefabToWpawn = MonsterPrefabs[monster];
         Instantiate(prefabToWpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+        
     }
 
     private int MonsterPerWave()
