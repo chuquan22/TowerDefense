@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tower
+    uniqueID: 4271002277
+    locked: 0
+  - name: weapon
+    uniqueID: 2871132045
+    locked: 0
+  - name: Bullet
+    uniqueID: 1232923699
+    locked: 0
