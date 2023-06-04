@@ -17,11 +17,15 @@ public class Turret : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f;
 
-
+    public Animator animator;
     private Transform target;
     private float timeUntilFire;
+
     private void Update()
     {
+       
+       
+        
         if (target == null)
         {
             FindTarget();
@@ -31,13 +35,19 @@ public class Turret : MonoBehaviour
         
         if (!CheckTargetIsInRange())
         {
+            if(animator != null)
+            {
+                animator.SetBool("Attack", false);
+            }
             target = null;
         }
         else
         {
+            
             timeUntilFire += Time.deltaTime;
             if (timeUntilFire >= 1f / bps)
             {
+               
                 Shoot();
                 timeUntilFire = 0f;
             }
@@ -47,7 +57,14 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, Quaternion.identity);
+        if (animator != null)
+        {
+            animator.SetBool("Attack", true);
+        }
+        float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
+
+        Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, targetRotation);
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
         bulletScript.SetTarget(target);
     }

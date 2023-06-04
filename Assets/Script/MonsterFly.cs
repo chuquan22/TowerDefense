@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class MonsterFly : Monster
 {
-    private void Start()
+
+    public override void Start()
     {
         moveSpeed = 4f;
+        base.Start();
     }
 }

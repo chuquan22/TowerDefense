@@ -15,7 +15,7 @@ public class Monster : MonoBehaviour
 
     private Transform target;
     private int pathIndex = 0;
-    private void Start()
+    public virtual void Start()
     {
         currentHP = maxHP;
         target = LevelManager.main.path[pathIndex];
