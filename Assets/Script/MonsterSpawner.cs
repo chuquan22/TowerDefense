@@ -1,27 +1,28 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 
 public class MonsterSpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] MonsterPrefabs;
-
+    [SerializeField] public Text txtHealth;
+    [SerializeField] public Button btnPrice;
     [Header("Attributes")]
     [SerializeField] private int baseMonster = 8;
     [SerializeField] private float MonsterPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     [SerializeField] private GameObject HP;
-
+    
     [Header("Events")]
     public static UnityEvent onMonsterDestroy = new UnityEvent();
-
-
 
     private int currentWave = 1;
     private float timeSinceLastSpawn;
@@ -29,7 +30,7 @@ public class MonsterSpawner : MonoBehaviour
     private int MonsterLeftToSpawn;
     private int monster = 0;
     private bool isSpawning = false;
-
+    public static int price = 0;
     private void Awake()
     {
         onMonsterDestroy.AddListener(MonsterDestroyed);
@@ -42,6 +43,16 @@ public class MonsterSpawner : MonoBehaviour
 
     private void Update()
     {
+                         /*
+                 *      Player.currentHealth--;
+                spawner.txtHealth.text = Player.currentHealth.ToString();
+                Debug.Log("Health: " + Player.currentHealth);
+                // if player dead
+                if (Player.isDead())
+                {
+                    Invoke("LoadScene", 2f);
+                }
+                 */
         if (!isSpawning)
         {
             return;
@@ -60,6 +71,25 @@ public class MonsterSpawner : MonoBehaviour
         {
             EndWave();
         }
+
+        if(Monster.isMonsterDestroyed)
+        {
+            price = price + Monster.BONUS_PRICE_MONSTER;
+            TMP_Text txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
+            txtPrice.text = price.ToString();
+            //txtPrice.text = Monster.price.ToString();
+            Monster.isMonsterDestroyed = false;
+        }
+
+        if (MonsterFly.isMonsterFlyDestroyed)
+        {
+            price = price + MonsterFly.BONUS_PRICE_MONSTER_FLY;
+            TMP_Text txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
+            txtPrice.text = price.ToString();
+            //txtPrice.text = Monster.price.ToString();
+            MonsterFly.isMonsterFlyDestroyed = false;
+        }
+
     }
 
     private void MonsterDestroyed()
