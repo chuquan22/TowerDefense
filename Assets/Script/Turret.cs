@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEditor;
 using System;
 
@@ -11,6 +12,8 @@ public class Turret : MonoBehaviour
     [SerializeField] private LayerMask enemyMask;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
+    [SerializeField] private GameObject upgradeUI;
+    [SerializeField] private Button upgradeButton;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
@@ -23,19 +26,19 @@ public class Turret : MonoBehaviour
 
     private void Update()
     {
-       
-       
-        
+
+
+
         if (target == null)
         {
             FindTarget();
             return;
         }
 
-        
+
         if (!CheckTargetIsInRange())
         {
-            if(animator != null)
+            if (animator != null)
             {
                 animator.SetBool("Attack", false);
             }
@@ -43,11 +46,11 @@ public class Turret : MonoBehaviour
         }
         else
         {
-            
+
             timeUntilFire += Time.deltaTime;
             if (timeUntilFire >= 1f / bps)
             {
-               
+
                 Shoot();
                 timeUntilFire = 0f;
             }
@@ -99,13 +102,23 @@ public class Turret : MonoBehaviour
         {
 
         }
-       
 
-        
+
+
+    }
+
+    public void OpenUpgradeUI()
+    {
+        upgradeUI.SetActive(true);
+    }
+    public void CloseUpgradeUI()
+    {
+        upgradeUI.SetActive(false);
     }
     private void OnDrawGizmosSelected()
     {
         Handles.color = Color.cyan;
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
     }
+
 }
