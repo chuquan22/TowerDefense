@@ -24,6 +24,17 @@ public class Turret : MonoBehaviour
     private Transform target;
     private float timeUntilFire;
 
+    TowerIO value;
+
+
+    private void Start()
+    {
+        value = new TowerIO(
+            fileName: "turret.csv",
+            filePath: "Tower/Turret"
+            );
+    }
+
     private void Update()
     {
 
