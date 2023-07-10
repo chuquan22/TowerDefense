@@ -34,7 +34,8 @@ public class Monster : MonoBehaviour
         {
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
-            {             
+            {
+                Player.currentHealth--;
                 MonsterSpawner.onMonsterDestroy.Invoke();      
                 Destroy(gameObject);
                 return;
@@ -65,8 +66,4 @@ public class Monster : MonoBehaviour
         }
     }
 
-    private void LoadScene()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
 }
