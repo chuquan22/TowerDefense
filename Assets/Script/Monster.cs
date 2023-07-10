@@ -18,11 +18,10 @@ public class Monster : MonoBehaviour
     private Animator animator;
     protected int maxHP = 100;
     public static float currentHP;
-    //public static int price = 0;
     private Transform target;
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
-    public const int BONUS_PRICE_MONSTER = 100;
+    public const int BONUS_PRICE_MONSTER = 10;
     public virtual void Start()
     {
         currentHP = maxHP;
