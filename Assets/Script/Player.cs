@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     public static bool isDead()
     {
-        return currentHealth == - 1;
+        return currentHealth == 0;
     }
 
     // Update is called once per frame
