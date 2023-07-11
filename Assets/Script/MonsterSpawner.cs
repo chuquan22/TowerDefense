@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MonsterSpawner : MonoBehaviour
@@ -45,16 +46,16 @@ public class MonsterSpawner : MonoBehaviour
 
     private void Update()
     {
-                         /*
-                 *      Player.currentHealth--;
-                spawner.txtHealth.text = Player.currentHealth.ToString();
-                Debug.Log("Health: " + Player.currentHealth);
-                // if player dead
-                if (Player.isDead())
-                {
-                    Invoke("LoadScene", 2f);
-                }
-                 */
+        if(Player.currentHealth > 0)
+        {
+            txtHealth.text = Player.currentHealth.ToString();
+        }
+          // Debug.Log("Health: " + Player.currentHealth);
+          // if player dead
+        if (Player.isDead())
+        {
+            LoadScene();
+        }
         if (!isSpawning)
         {
             return;
@@ -126,5 +127,10 @@ public class MonsterSpawner : MonoBehaviour
     private int MonsterPerWave()
     {
         return Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
+    }
+
+    private void LoadScene()
+    {
+        SceneManager.LoadScene("GameOver");
     }
 }

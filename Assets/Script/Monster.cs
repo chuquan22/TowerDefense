@@ -17,8 +17,10 @@ public class Monster : MonoBehaviour
     private Animator animator;
     protected int maxHP = 100;
     public static float currentHP;
+
     //public static int price = 0;
     private GameObject target;
+
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public const int BONUS_PRICE_MONSTER = 10;
@@ -35,7 +37,8 @@ public class Monster : MonoBehaviour
             transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
-            {             
+            {
+                Player.currentHealth--;
                 MonsterSpawner.onMonsterDestroy.Invoke();      
                 Destroy(gameObject);
                 return;
@@ -86,8 +89,4 @@ public class Monster : MonoBehaviour
         }
     }
 
-    private void LoadScene()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
 }
