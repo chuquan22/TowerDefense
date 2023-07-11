@@ -19,7 +19,7 @@ public class Turret : MonoBehaviour
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f;
-    [SerializeField] private int baseUpgradeCost = 100;
+    [SerializeField] private int baseUpgradeCost = 30;
     [SerializeField] private int level = 1;
 
     public Animator animator;
@@ -122,9 +122,9 @@ public class Turret : MonoBehaviour
 
     public void Upgrade()
     {
-        if (CaculateCost() > int.Parse(MonsterSpawner.txtPrice.text)) return;
+        if (CaculateCost() > MonsterSpawner.price) return;
 
-        int newPrice = int.Parse(MonsterSpawner.txtPrice.text) - CaculateCost();
+        int newPrice = MonsterSpawner.price - CaculateCost();
         MonsterSpawner.txtPrice.text = newPrice.ToString();
         level++;
         bps = CaculateBPS();
@@ -169,5 +169,13 @@ public class Turret : MonoBehaviour
             return;
         }
         OpenUpgradeUI();
+    }
+
+    public void Sell()
+    {
+        int newPrice = MonsterSpawner.price + TowerTest.cost;
+        MonsterSpawner.txtPrice.text = newPrice.ToString();
+        Destroy(gameObject);
+        Plot.main.gameObject.SetActive(true);
     }
 }
