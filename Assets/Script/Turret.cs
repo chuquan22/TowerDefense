@@ -13,16 +13,20 @@ public class Turret : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
     [SerializeField] private GameObject upgradeUI;
-    [SerializeField] private Button upgradeButton;
+    [SerializeField] private GameObject tower;
 
     [Header("Attribute")]
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f;
+    [SerializeField] private int baseUpgradeCost = 100;
+    [SerializeField] private int level = 1;
 
     public Animator animator;
     private Transform target;
     private float timeUntilFire;
+    public List<GameObject> targets;
+    
 
     TowerIO value;
 
@@ -33,6 +37,7 @@ public class Turret : MonoBehaviour
             fileName: "turret.csv",
             filePath: "Tower/Turret"
             );
+       
     }
 
     private void Update()
@@ -113,11 +118,35 @@ public class Turret : MonoBehaviour
         {
 
         }
-
-
-
     }
 
+    public void Upgrade()
+    {
+        if (CaculateCost() > int.Parse(MonsterSpawner.txtPrice.text)) return;
+
+        int newPrice = int.Parse(MonsterSpawner.txtPrice.text) - CaculateCost();
+        MonsterSpawner.txtPrice.text = newPrice.ToString();
+        level++;
+        bps = CaculateBPS();
+        targetingRange = CaculateRange();
+        Instantiate(tower, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+        CloseUpgradeUI();
+    }
+
+    private int CaculateCost()
+    {
+        return Mathf.RoundToInt( baseUpgradeCost * Mathf.Pow(level, 0.8f));
+    }
+
+    private float CaculateBPS()
+    {
+        return bps * Mathf.Pow(level, 0.5f);
+    }
+    private float CaculateRange()
+    {
+        return targetingRange * Mathf.Pow(level, 0.4f);
+    }
     public void OpenUpgradeUI()
     {
         upgradeUI.SetActive(true);
@@ -125,6 +154,7 @@ public class Turret : MonoBehaviour
     public void CloseUpgradeUI()
     {
         upgradeUI.SetActive(false);
+        UIManager.main.SetHoveringState(false);
     }
     private void OnDrawGizmosSelected()
     {
@@ -132,4 +162,12 @@ public class Turret : MonoBehaviour
         Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
     }
 
+    private void OnMouseDown()
+    {
+        if (UIManager.main.IsHoveringUI())
+        {
+            return;
+        }
+        OpenUpgradeUI();
+    }
 }
