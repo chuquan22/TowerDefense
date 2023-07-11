@@ -48,7 +48,7 @@ public class Plot : MonoBehaviour
         tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
         turret = tower.GetComponent<Turret>();
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     public void Upgrade()
