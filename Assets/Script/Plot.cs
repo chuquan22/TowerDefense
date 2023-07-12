@@ -22,7 +22,7 @@ public class Plot : MonoBehaviour
     private void Start()
     {
         startColor = sr.color;
-        
+
     }
     private void OnMouseEnter()
     {
@@ -43,17 +43,21 @@ public class Plot : MonoBehaviour
             turret.OpenUpgradeUI();
             return;
         }
-        
-        TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-        // if money player bigger or equal tower's price
-        if(MonsterSpawner.price >= towerToBuild.cost)
-        {
-            MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
-            MonsterSpawner.isTowerBought = true;
-            tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-            turret = tower.GetComponent<Turret>();
+        try {
+            TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
+            // if money player bigger or equal tower's price
+            if (MonsterSpawner.price >= towerToBuild.cost)
+            {
+                MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
+                MonsterSpawner.isTowerBought = true;
+                tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+                turret = tower.GetComponent<Turret>();
+            }
         }
-
+        catch(System.Exception e)
+        {
+            Debug.Log(e.ToString());
+        }
         gameObject.SetActive(false);
     }
 

@@ -147,15 +147,15 @@ public class MonsterSpawner : MonoBehaviour
 
     private void SpawnMonster()
     {
+        Debug.Log("monster "+monster);
         GameObject prefabToWpawn;
-        if (monster >= MonsterPrefabs.Length)
+        if (monster == MonsterPrefabs.Length -1)
         {
             monster = 0;
         }
-        System.Random rd = new System.Random();
-        int number = rd.Next(1, currentWave);
+        
 
-        if (MonsterLeftToSpawn <= number)
+        if (MonsterLeftToSpawn <= currentWave)
         {
             prefabToWpawn = MonsterPrefabs[monster + 1];
         }

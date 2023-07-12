@@ -24,18 +24,24 @@ public class Monster : MonoBehaviour
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public const int BONUS_PRICE_MONSTER = 10;
+
+    Slider slider;
+
     public static bool isPassed = false;
+
     public virtual void Start()
     {
         currentHP = maxHP;
         target = LevelManager.main.path[pathIndex];
         animator = GetComponent<Animator>();
+        slider= GetComponentInChildren<Slider>();
+        slider.maxValue = maxHP; slider.minValue = 0;
     }
     private void Update()
     {
         if(Vector2.Distance(target.GetComponent<Transform>().position, transform.position) <= 0.1f)
         {
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
             {      
@@ -51,6 +57,7 @@ public class Monster : MonoBehaviour
             }
             if (animator != null)
             {
+                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 if (transform.position.y - target.GetComponent<Transform>().position.y > 2f)
                 {
                     animator.SetInteger("direction", 1);
@@ -82,6 +89,7 @@ public class Monster : MonoBehaviour
     public virtual void TakeDamage(float damage)
     {
         currentHP -= damage;
+        slider.value = currentHP;
         Debug.Log(currentHP);
         if(currentHP <= 0)
         {
