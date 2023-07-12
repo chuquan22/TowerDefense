@@ -53,6 +53,7 @@ public class MonsterSpawner : MonoBehaviour
     private void LoadPauseScene()
     {
         SceneManager.LoadScene("PauseGame");
+        //Time.timeScale = 0f;
     }
 
 
