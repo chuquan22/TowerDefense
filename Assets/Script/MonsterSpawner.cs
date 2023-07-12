@@ -13,6 +13,7 @@ public class MonsterSpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] MonsterPrefabs;
+    [SerializeField] private Button btnPause;
     [SerializeField] private Text textPrice;
     [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
@@ -46,6 +47,12 @@ public class MonsterSpawner : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartWave());
+        btnPause.onClick.AddListener(LoadPauseScene);
+    }
+
+    private void LoadPauseScene()
+    {
+        SceneManager.LoadScene("PauseGame");
     }
 
 
@@ -86,7 +93,7 @@ public class MonsterSpawner : MonoBehaviour
         // if player dead
         if (Player.isDead())
         {
-            LoadScene();
+            LoadGameOverScene();
         }
         if (!isSpawning)
         {
@@ -172,7 +179,7 @@ public class MonsterSpawner : MonoBehaviour
         return Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
     }
 
-    private void LoadScene()
+    private void LoadGameOverScene()
     {
         SceneManager.LoadScene("GameOver");
     }

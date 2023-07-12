@@ -1563,6 +1563,7 @@ MonoBehaviour:
   - {fileID: 2227762880307190620, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
   - {fileID: 5043798957912043830, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
   - {fileID: 3794802503688587050, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
+  btnPause: {fileID: 245527633}
   textPrice: {fileID: 1734452394}
   hearts:
   - {fileID: 879283556}
