@@ -15,7 +15,7 @@ public class Monster : MonoBehaviour
     [Header("Attributes")]
     protected float moveSpeed = 2f;
     private Animator animator;
-    protected int maxHP = 100;
+    protected int maxHP = 50;
     public static float currentHP;
 
     //public static int price = 0;

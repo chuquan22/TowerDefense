@@ -8,7 +8,7 @@ public class BuildManager : MonoBehaviour
     [Header("References")]
     //[SerializeField] private GameObject[] towerPrefabs;
     [SerializeField] private TowerTest[] towers;
-    private int selectedTower;
+    private int selectedTower = -1;
 
 
     private void Awake()

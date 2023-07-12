@@ -52,6 +52,7 @@ public class Plot : MonoBehaviour
                 MonsterSpawner.isTowerBought = true;
                 tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
                 turret = tower.GetComponent<Turret>();
+                BuildManager.main.SetDefaultSelectedTower();
             }
         }
         catch(System.Exception e)
