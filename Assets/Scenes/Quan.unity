@@ -2162,175 +2162,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5648800610933863983, guid: dfec040ccc9435f42b6ee6284e1b35bd, type: 3}
   m_PrefabInstance: {fileID: 140826237}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &153835228
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 153835233}
-  - component: {fileID: 153835232}
-  - component: {fileID: 153835231}
-  - component: {fileID: 153835230}
-  - component: {fileID: 153835229}
-  - component: {fileID: 153835234}
-  - component: {fileID: 153835235}
-  m_Layer: 0
-  m_Name: Level
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &153835229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c31a98fdd1a18e64c82f4d10838aa354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towers:
-  - name: IceBowTower
-    cost: 20
-    prefab: {fileID: 4168787004580614290, guid: 89c84b362e86b634aa31b04527a68d81, type: 3}
-  - name: RockTower
-    cost: 40
-    prefab: {fileID: 6922874079956346840, guid: d225fe3de9072af4189a4d8235ef3dd1, type: 3}
-  - name: LightningTower
-    cost: 25
-    prefab: {fileID: 51527682075487157, guid: b28704a48eed4c343813ddbb0e805133, type: 3}
-  - name: ShockTower
-    cost: 30
-    prefab: {fileID: 8946976499225789358, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
---- !u!114 &153835230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4d4151985e3a9f4792579eea402ebd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &153835231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd604144fecee2b48a3b0a5a0fa0204b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MonsterPrefabs:
-  - {fileID: 2227762880307190620, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
-  - {fileID: 5043798957912043830, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
-  - {fileID: 3794802503688587050, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
-  textPrice: {fileID: 40446113}
-  hearts: []
-  baseMonster: 8
-  MonsterPerSecond: 0.5
-  timeBetweenWaves: 5
-  difficultyScalingFactor: 0.75
-  HP: {fileID: 0}
---- !u!114 &153835232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da3ad6946c7eb749b104d9d1e1f39c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startPoint: {fileID: 1433806135}
-  path:
-  - {fileID: 811129442}
-  - {fileID: 1080707593}
-  - {fileID: 2033796569}
-  - {fileID: 601408124}
-  - {fileID: 1830009404}
-  - {fileID: 1300136605}
-  - {fileID: 989595878}
-  - {fileID: 1703239698}
-  - {fileID: 1999305954}
-  - {fileID: 1337395276}
-  - {fileID: 1211298438}
-  - {fileID: 356577194}
-  - {fileID: 384157712}
-  - {fileID: 1607145789}
-  - {fileID: 699301924}
-  - {fileID: 1786588005}
-  - {fileID: 248047097}
-  - {fileID: 103679923}
-  - {fileID: 1755674296}
-  - {fileID: 1525143243}
-  - {fileID: 2093913091}
-  - {fileID: 61716758}
-  - {fileID: 1294986212}
-  - {fileID: 1549748739}
-  - {fileID: 1314269505}
-  - {fileID: 2130057024}
-  - {fileID: 1459151671}
-  - {fileID: 861153769}
-  - {fileID: 1319096830}
-  - {fileID: 48584816}
-  - {fileID: 1637915937}
-  - {fileID: 198106883}
-  direction: 
---- !u!4 &153835233
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &153835234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2e94d819d2fd6489a8602f9be34459, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isHoveringUI: 0
---- !u!114 &153835235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 153835228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4d4151985e3a9f4792579eea402ebd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &198106883
 GameObject:
   m_ObjectHideFlags: 0
@@ -11032,7 +10863,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153835229}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -11323,6 +11154,167 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &632473210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632473216}
+  - component: {fileID: 632473215}
+  - component: {fileID: 632473214}
+  - component: {fileID: 632473213}
+  - component: {fileID: 632473212}
+  - component: {fileID: 632473211}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &632473211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd604144fecee2b48a3b0a5a0fa0204b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MonsterPrefabs:
+  - {fileID: 2227762880307190620, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
+  - {fileID: 5043798957912043830, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
+  - {fileID: 3794802503688587050, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
+  textPrice: {fileID: 0}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  baseMonster: 8
+  MonsterPerSecond: 0.5
+  timeBetweenWaves: 5
+  difficultyScalingFactor: 0.75
+  HP: {fileID: 0}
+--- !u!114 &632473212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d2e94d819d2fd6489a8602f9be34459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHoveringUI: 0
+--- !u!114 &632473213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31a98fdd1a18e64c82f4d10838aa354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towers:
+  - name: IceBowTower
+    cost: 20
+    prefab: {fileID: 4168787004580614290, guid: 89c84b362e86b634aa31b04527a68d81, type: 3}
+  - name: RockTower
+    cost: 40
+    prefab: {fileID: 6922874079956346840, guid: d225fe3de9072af4189a4d8235ef3dd1, type: 3}
+  - name: LightningTower
+    cost: 25
+    prefab: {fileID: 3982248871318747084, guid: 3d7a240b81e0034418a1e69f98b0bd1a, type: 3}
+  - name: ShockTower
+    cost: 30
+    prefab: {fileID: 8946976499225789358, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
+--- !u!114 &632473214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d4151985e3a9f4792579eea402ebd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &632473215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da3ad6946c7eb749b104d9d1e1f39c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {fileID: 0}
+  path:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  direction: 
+--- !u!4 &632473216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632473210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &633191104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11955,7 +11947,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153835229}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -12325,7 +12317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153835229}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -12666,7 +12658,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153835229}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
