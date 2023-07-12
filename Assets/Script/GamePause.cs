@@ -19,13 +19,13 @@ public class GamePause : MonoBehaviour
 
     void Continue()
     {
-
+        SceneManager.LoadScene("SampleScene");
     }
 
      void Restart()
      {
-        SceneManager.LoadScene("SampleGame");
-    }
+        SceneManager.LoadScene("SampleScene");
+     }
 
     void QuitGame()
     {

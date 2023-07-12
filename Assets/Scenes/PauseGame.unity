@@ -703,7 +703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btnContinue: {fileID: 236632324}
-  btnRestart: {fileID: 0}
+  btnRestart: {fileID: 1014743224}
   btnQuit: {fileID: 248212028}
 --- !u!1 &1014743222
 GameObject:
