@@ -174,6 +174,7 @@ public class Turret : MonoBehaviour
 
     public void Sell()
     {
+
         int newPrice = MonsterSpawner.price + 20;
         //Debug.Log("Tower cost : " + TowerTest.cost);
         Debug.Log("New price : " + newPrice);
@@ -181,6 +182,7 @@ public class Turret : MonoBehaviour
         MonsterSpawner.price = newPrice;
         Debug.Log("Current price : " + MonsterSpawner.price);
         MonsterSpawner.isTowerSold = true;
+
         Destroy(gameObject);
         Plot.main.gameObject.SetActive(true);
     }

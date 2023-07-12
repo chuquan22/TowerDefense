@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
 
-    protected float damage = 20f;
+    [SerializeField] private float damage = 20f;
 
     private Transform target;
     public void SetTarget(Transform _target)
@@ -20,7 +20,11 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!target) return;
+        if (!target)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Vector2 direction = (target.position - transform.position).normalized;
 
         rb.velocity = direction * bulletSpeed;
