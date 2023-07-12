@@ -886,7 +886,7 @@ MonoBehaviour:
   firingPoint: {fileID: 701700046804356429}
   upgradeUI: {fileID: 6642469648047744141}
   tower: {fileID: 3018285478765336393, guid: 9e15e3f2526cc6141bca97bd35d1d493, type: 3}
-  targetingRange: 3
+  targetingRange: 2
   rotationSpeed: 200
   bps: 2
   baseUpgradeCost: 50

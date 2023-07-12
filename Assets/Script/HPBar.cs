@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class HPBar : MonoBehaviour
 {
-    [SerializeField]
     Slider slider;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        slider = gameObject.GetComponent<Slider>();
+    }
     void Start()
     {
         slider.maxValue = 100;

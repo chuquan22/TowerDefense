@@ -123,10 +123,9 @@ public class MonsterSpawner : MonoBehaviour
         {
             monster = 0;
         }
-        System.Random rd = new System.Random();
-        int number = rd.Next(1, currentWave);
+        
 
-        if (MonsterLeftToSpawn <= number)
+        if (MonsterLeftToSpawn <= currentWave)
         {
             prefabToWpawn = MonsterPrefabs[monster + 1];
         }

@@ -22,11 +22,14 @@ public class Monster : MonoBehaviour
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public const int BONUS_PRICE_MONSTER = 10;
+    Slider slider;
     public virtual void Start()
     {
         currentHP = maxHP;
         target = LevelManager.main.path[pathIndex];
         animator = GetComponent<Animator>();
+        slider= GetComponentInChildren<Slider>();
+        slider.maxValue = maxHP; slider.minValue = 0;
     }
     private void Update()
     {
@@ -78,6 +81,7 @@ public class Monster : MonoBehaviour
     public virtual void TakeDamage(float damage)
     {
         currentHP -= damage;
+        slider.value = currentHP;
         Debug.Log(currentHP);
         if(currentHP <= 0)
         {
