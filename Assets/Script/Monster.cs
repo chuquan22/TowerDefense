@@ -11,7 +11,7 @@ public class Monster : MonoBehaviour
    
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField]
+    [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
     protected float moveSpeed = 2f;
     private Animator animator;
@@ -24,6 +24,7 @@ public class Monster : MonoBehaviour
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public const int BONUS_PRICE_MONSTER = 10;
+    public static bool isPassed = false;
     public virtual void Start()
     {
         currentHP = maxHP;
@@ -37,8 +38,9 @@ public class Monster : MonoBehaviour
             transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
-            {
+            {      
                 Player.currentHealth--;
+                isPassed = true;
                 MonsterSpawner.onMonsterDestroy.Invoke();      
                 Destroy(gameObject);
                 return;
