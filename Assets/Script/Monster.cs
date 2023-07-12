@@ -11,18 +11,24 @@ public class Monster : MonoBehaviour
    
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField]
+    [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
     protected float moveSpeed = 2f;
     private Animator animator;
     protected int maxHP = 100;
     public static float currentHP;
+
     //public static int price = 0;
     private GameObject target;
+
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public const int BONUS_PRICE_MONSTER = 10;
+
     Slider slider;
+
+    public static bool isPassed = false;
+
     public virtual void Start()
     {
         currentHP = maxHP;
@@ -38,7 +44,9 @@ public class Monster : MonoBehaviour
             
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
-            {             
+            {      
+                Player.currentHealth--;
+                isPassed = true;
                 MonsterSpawner.onMonsterDestroy.Invoke();      
                 Destroy(gameObject);
                 return;
@@ -91,8 +99,4 @@ public class Monster : MonoBehaviour
         }
     }
 
-    private void LoadScene()
-    {
-        SceneManager.LoadScene("GameOver");
-    }
 }

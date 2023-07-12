@@ -43,19 +43,21 @@ public class Plot : MonoBehaviour
             turret.OpenUpgradeUI();
             return;
         }
-        try { 
+        try {
             TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-            tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-            BuildManager.main.SetDefaultSelectedTower();
-            turret = tower.GetComponent<Turret>();
+            // if money player bigger or equal tower's price
+            if (MonsterSpawner.price >= towerToBuild.cost)
+            {
+                MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
+                MonsterSpawner.isTowerBought = true;
+                tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+                turret = tower.GetComponent<Turret>();
+            }
         }
         catch(System.Exception e)
         {
             Debug.Log(e.ToString());
         }
-
-        
-
         gameObject.SetActive(false);
     }
 
