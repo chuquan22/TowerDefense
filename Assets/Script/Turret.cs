@@ -125,7 +125,8 @@ public class Turret : MonoBehaviour
         if (CaculateCost() > MonsterSpawner.price) return;
 
         int newPrice = MonsterSpawner.price - CaculateCost();
-        MonsterSpawner.txtPrice.text = newPrice.ToString();
+        MonsterSpawner.price = newPrice;
+        MonsterSpawner.isUpgrade = true;
         level++;
         bps = CaculateBPS();
         targetingRange = CaculateRange();
@@ -173,8 +174,13 @@ public class Turret : MonoBehaviour
 
     public void Sell()
     {
-        int newPrice = MonsterSpawner.price + TowerTest.cost;
-        MonsterSpawner.txtPrice.text = newPrice.ToString();
+        int newPrice = MonsterSpawner.price + 20;
+        //Debug.Log("Tower cost : " + TowerTest.cost);
+        Debug.Log("New price : " + newPrice);
+        // set price
+        MonsterSpawner.price = newPrice;
+        Debug.Log("Current price : " + MonsterSpawner.price);
+        MonsterSpawner.isTowerSold = true;
         Destroy(gameObject);
         Plot.main.gameObject.SetActive(true);
     }

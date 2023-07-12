@@ -6,7 +6,7 @@ using System;
 public class TowerTest 
 {
     public string name;
-    public static int cost;
+    public int cost;
     public GameObject prefab;
 
     public TowerTest(string _name, int _cost, GameObject _prefab)

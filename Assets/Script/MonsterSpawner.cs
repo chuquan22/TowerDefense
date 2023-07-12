@@ -13,9 +13,8 @@ public class MonsterSpawner : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private GameObject[] MonsterPrefabs;
-    [SerializeField] public Text txtHealth;
-    [SerializeField] public Button btnPrice;
-    public static TMP_Text txtPrice;
+    [SerializeField] private Text textPrice;
+    [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
     [SerializeField] private int baseMonster = 8;
     [SerializeField] private float MonsterPerSecond = 0.5f;
@@ -33,28 +32,58 @@ public class MonsterSpawner : MonoBehaviour
     private int monster = 0;
     private bool isSpawning = false;
     public static int price = 30;
+    private readonly int MAX_INDEX_MONSTER = 4;
+    private int index;
+    public static bool isTowerSold = false;
+    public static bool isUpgrade = false;
+    public static bool isTowerBought = false;
     private void Awake()
-    {
-        onMonsterDestroy.AddListener(MonsterDestroyed);
-        txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
-        txtPrice.text = price.ToString();
+    {   
+         onMonsterDestroy.AddListener(MonsterDestroyed);
+         textPrice.text = price.ToString();
+         index = MAX_INDEX_MONSTER;
     }
     private void Start()
     {
         StartCoroutine(StartWave());
-       
-        
     }
 
 
     private void Update()
     {
-        if(Player.currentHealth > 0)
+        // if monster passed
+        if (Monster.isPassed)
         {
-            txtHealth.text = Player.currentHealth.ToString();
+            if(index >= 0)
+            {
+                hearts[index].SetActive(false);
+                index--;
+            }
+            Monster.isPassed = false;
         }
-          // Debug.Log("Health: " + Player.currentHealth);
-          // if player dead
+
+        // if player sell tower
+        if(isTowerSold)
+        {
+            textPrice.text = price.ToString();
+            isTowerSold = false;
+        }
+
+        // if player upgrade tower
+        if (isUpgrade)
+        {
+            textPrice.text = price.ToString();
+            isUpgrade = false;
+        }
+
+        // if player buy tower
+        if(isTowerBought)
+        {
+            textPrice.text = price.ToString();
+            isTowerBought = false;
+        }
+
+        // if player dead
         if (Player.isDead())
         {
             LoadScene();
@@ -78,19 +107,19 @@ public class MonsterSpawner : MonoBehaviour
             EndWave();
         }
 
+        // if monster destroyed
         if(Monster.isMonsterDestroyed)
         {
             price = price + Monster.BONUS_PRICE_MONSTER;
-            txtPrice.text =  price.ToString();
-            //txtPrice.text = Monster.price.ToString();
+            textPrice.text = price.ToString();
             Monster.isMonsterDestroyed = false;
         }
 
+        // if monster fly destroyed
         if (MonsterFly.isMonsterFlyDestroyed)
         {
             price = price + MonsterFly.BONUS_PRICE_MONSTER_FLY;
-            txtPrice.text = price.ToString();
-            //txtPrice.text = Monster.price.ToString();
+            textPrice.text = price.ToString();
             MonsterFly.isMonsterFlyDestroyed = false;
         }
 

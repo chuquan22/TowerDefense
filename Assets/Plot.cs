@@ -45,8 +45,14 @@ public class Plot : MonoBehaviour
         }
         
         TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-        turret = tower.GetComponent<Turret>();
+        // if money player bigger or equal tower's price
+        if(MonsterSpawner.price >= towerToBuild.cost)
+        {
+            MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
+            MonsterSpawner.isTowerBought = true;
+            tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+            turret = tower.GetComponent<Turret>();
+        }
 
         gameObject.SetActive(false);
     }
