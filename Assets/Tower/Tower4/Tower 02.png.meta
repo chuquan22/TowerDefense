@@ -111,9 +111,9 @@ TextureImporter:
         x: 0
         y: 0
         width: 64
-        height: 192
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: Tower 02_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 0
-        width: 64
-        height: 192
+        width: 63
+        height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: Tower 02_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 0
-        width: 64
-        height: 192
+        width: 63
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -32,7 +32,7 @@ public class Monster : MonoBehaviour
     {
         if(Vector2.Distance(target.GetComponent<Transform>().position, transform.position) <= 0.1f)
         {
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+            
             pathIndex++; 
             if (pathIndex == LevelManager.main.path.Length)
             {             
@@ -46,6 +46,7 @@ public class Monster : MonoBehaviour
             }
             if (animator != null)
             {
+                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
                 if (transform.position.y - target.GetComponent<Transform>().position.y > 2f)
                 {
                     animator.SetInteger("direction", 1);

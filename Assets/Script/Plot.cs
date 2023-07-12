@@ -45,7 +45,12 @@ public class Plot : MonoBehaviour
         }
         
         TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-        tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+        if(towerToBuild != null)
+        {
+            tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
+            BuildManager.main.SetDefaultSelectedTower();
+        }
+        
         turret = tower.GetComponent<Turret>();
 
         gameObject.SetActive(false);
