@@ -57,7 +57,11 @@ public class Monster : MonoBehaviour
             }
             if (animator != null)
             {
-                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                if(transform.localScale.x < 0)
+                {
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                }
+                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 if (transform.position.y - target.GetComponent<Transform>().position.y > 2f)
                 {
                     animator.SetInteger("direction", 1);
@@ -69,7 +73,7 @@ public class Monster : MonoBehaviour
                 else if (transform.position.x > target.GetComponent<Transform>().position.x)
                 {
                     animator.SetInteger("direction", 0);
-                    transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 }
                 else
                 {

@@ -157,7 +157,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         Debug.Log("monster "+monster);
         GameObject prefabToWpawn;
-        if (monster == MonsterPrefabs.Length -1)
+        if (monster == MonsterPrefabs.Length)
         {
             monster = 0;
         }
