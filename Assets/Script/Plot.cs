@@ -22,7 +22,7 @@ public class Plot : MonoBehaviour
     private void Start()
     {
         startColor = sr.color;
-        
+
     }
     private void OnMouseEnter()
     {
@@ -43,15 +43,18 @@ public class Plot : MonoBehaviour
             turret.OpenUpgradeUI();
             return;
         }
-        
-        TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-        if(towerToBuild != null)
-        {
+        try { 
+            TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
             tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
             BuildManager.main.SetDefaultSelectedTower();
+            turret = tower.GetComponent<Turret>();
         }
+        catch(System.Exception e)
+        {
+            Debug.Log(e.ToString());
+        }
+
         
-        turret = tower.GetComponent<Turret>();
 
         gameObject.SetActive(false);
     }

@@ -17,7 +17,6 @@ public class BuildManager : MonoBehaviour
     }
     public TowerTest GetSelectedTower()
     {
-        
         return towers[selectedTower];
     }
     public void SetSeclectedTower(int _selectedTower)

@@ -557,7 +557,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7685452497021466815, guid: 6ec7ae076f1ad0246ad244bdfe2e9746, type: 3}
   firingPoint: {fileID: 6508514425910735896}
   upgradeUI: {fileID: 1003901434279537403}
-  tower: {fileID: 51527682075487157, guid: b28704a48eed4c343813ddbb0e805133, type: 3}
+  tower: {fileID: 3653016243060299450, guid: 762150f5e611d41478f810cece31eb10, type: 3}
   targetingRange: 5
   rotationSpeed: 5
   bps: 1
