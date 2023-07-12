@@ -15,6 +15,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private GameObject[] MonsterPrefabs;
     [SerializeField] public Text txtHealth;
     [SerializeField] public Button btnPrice;
+    public static TMP_Text txtPrice;
     [Header("Attributes")]
     [SerializeField] private int baseMonster = 8;
     [SerializeField] private float MonsterPerSecond = 0.5f;
@@ -31,14 +32,18 @@ public class MonsterSpawner : MonoBehaviour
     private int MonsterLeftToSpawn;
     private int monster = 0;
     private bool isSpawning = false;
-    public static int price = 0;
+    public static int price = 30;
     private void Awake()
     {
         onMonsterDestroy.AddListener(MonsterDestroyed);
+        txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
+        txtPrice.text = price.ToString();
     }
     private void Start()
     {
         StartCoroutine(StartWave());
+       
+        
     }
 
 
@@ -76,8 +81,7 @@ public class MonsterSpawner : MonoBehaviour
         if(Monster.isMonsterDestroyed)
         {
             price = price + Monster.BONUS_PRICE_MONSTER;
-            TMP_Text txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
-            txtPrice.text = price.ToString();
+            txtPrice.text =  price.ToString();
             //txtPrice.text = Monster.price.ToString();
             Monster.isMonsterDestroyed = false;
         }
@@ -85,7 +89,6 @@ public class MonsterSpawner : MonoBehaviour
         if (MonsterFly.isMonsterFlyDestroyed)
         {
             price = price + MonsterFly.BONUS_PRICE_MONSTER_FLY;
-            TMP_Text txtPrice = btnPrice.GetComponentInChildren<TMP_Text>(true);
             txtPrice.text = price.ToString();
             //txtPrice.text = Monster.price.ToString();
             MonsterFly.isMonsterFlyDestroyed = false;
@@ -115,12 +118,23 @@ public class MonsterSpawner : MonoBehaviour
 
     private void SpawnMonster()
     {
-        if(monster > MonsterPrefabs.Length)
+        GameObject prefabToWpawn;
+        if (monster >= MonsterPrefabs.Length)
         {
             monster = 0;
         }
-        GameObject prefabToWpawn = MonsterPrefabs[monster];
-        Instantiate(prefabToWpawn, LevelManager.main.startPoint.position, Quaternion.identity);
+        System.Random rd = new System.Random();
+        int number = rd.Next(1, currentWave);
+
+        if (MonsterLeftToSpawn <= number)
+        {
+            prefabToWpawn = MonsterPrefabs[monster + 1];
+        }
+        else
+        {
+            prefabToWpawn = MonsterPrefabs[monster];
+        }
+        Instantiate(prefabToWpawn, LevelManager.main.startPoint.GetComponent<Transform>().position, Quaternion.identity);
         
     }
 
