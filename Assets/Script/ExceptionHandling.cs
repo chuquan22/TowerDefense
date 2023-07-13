@@ -14,17 +14,18 @@ public class ExceptionHandling : MonoBehaviour
     TextMeshProUGUI message;
     TextMeshProUGUI title;
 
-    private void Awake()
+     void Awake()
     {
         notificationUI = GameObject.Find("Notification");
-         message = GameObject.Find("NotificationMessage").GetComponent<TextMeshProUGUI>();
+        message = GameObject.Find("NotificationMessage").GetComponent<TextMeshProUGUI>();
         title = GameObject.Find("NotificationTitle").GetComponent<TextMeshProUGUI>();
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        notificationUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,13 +36,18 @@ public class ExceptionHandling : MonoBehaviour
         {
             ShowNotification();
         }
+
+      
         
+        //message.text = "abc" + notificationUI;
+
     }
 
 
     public void ShowNotification()
     {
-        
+        //message = GameObject.Find("NotificationMessage").GetComponent<TextMeshProUGUI>();
+        //title = GameObject.Find("NotificationTitle").GetComponent<TextMeshProUGUI>();
         Notification notification =  NotificationManager.TakeNotification();
 
         title.text = notification.Title;

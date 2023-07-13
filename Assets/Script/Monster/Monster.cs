@@ -35,7 +35,9 @@ public class Monster : MonoBehaviour
         target = LevelManager.main.path[pathIndex];
         animator = GetComponent<Animator>();
         slider= GetComponentInChildren<Slider>();
-        slider.maxValue = maxHP; slider.minValue = 0;
+        slider.maxValue = maxHP;
+        slider.value = slider.maxValue;
+        slider.minValue = 0;
     }
     private void Update()
     {
@@ -93,8 +95,8 @@ public class Monster : MonoBehaviour
     public virtual void TakeDamage(float damage)
     {
         currentHP -= damage;
-        slider.value = currentHP;
-        Debug.Log(currentHP);
+        slider.value -= damage;
+        Debug.Log(gameObject.name + ": "+  slider.value);
         if(currentHP <= 0)
         {
             MonsterSpawner.onMonsterDestroy.Invoke();
