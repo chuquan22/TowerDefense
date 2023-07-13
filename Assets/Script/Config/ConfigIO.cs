@@ -21,10 +21,12 @@ public class ConfigIO
     {
         TargetingRange = 5f,
         RotationSpeed = 5f,
-        Bps = 1f
+        Bps = 1f,
+        Cost = 10,
+        UpdateCost = 5,
     };
 
-    MonsterField defaultMonsterField = new MonsterField { MaxHP = 100, MoveSpeed = 2f };
+    MonsterField defaultMonsterField = new MonsterField { MaxHP = 100, MoveSpeed = 2f, Price= 3 };
 
     static ConfigIO instance;
 
@@ -136,8 +138,8 @@ public class ConfigIO
 
 
 
-                writer.WriteLine("TargetingRange,RotationSpeed,Bps");
-                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps}");
+                writer.WriteLine("TargetingRange,RotationSpeed,Bps, Cost, UpdateCost");
+                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps},{tower.Cost},{tower.UpdateCost}");
             }
             else
             {
@@ -197,6 +199,8 @@ public class ConfigIO
             tower.TargetingRange = float.Parse(values[0]);
             tower.RotationSpeed = float.Parse(values[1]);
             tower.Bps = float.Parse(values[2]);
+            tower.Cost = int.Parse(values[3]);
+            tower.UpdateCost = int.Parse(values[4]);
 
 
             //targetingRange = float.Parse(values[0]);
@@ -275,8 +279,8 @@ public class ConfigIO
 
 
 
-                writer.WriteLine("MaxHP,MoveSpeed");
-                writer.WriteLine($"{monster.MaxHP},{monster.MoveSpeed}");
+                writer.WriteLine("MaxHP,MoveSpeed,Price");
+                writer.WriteLine($"{monster.MaxHP},{monster.MoveSpeed},{monster.Price}");
             }
             else
             {
@@ -331,6 +335,7 @@ public class ConfigIO
 
             monster.MaxHP = int.Parse(values[0]);
             monster.MoveSpeed = float.Parse(values[1]);
+            monster.Price = int.Parse(values[2]);
 
 
 

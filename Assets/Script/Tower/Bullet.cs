@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
     {
         if (!target)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             return;
         }
         Vector2 direction = (target.position - transform.position).normalized;
@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         Monster monster = other.gameObject.GetComponent<Monster>();
         MonsterFly monsterFly = other.gameObject.GetComponent<MonsterFly>();
         if (monster != null)

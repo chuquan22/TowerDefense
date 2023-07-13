@@ -16,6 +16,10 @@ public class Turret : MonoBehaviour
     [SerializeField] private GameObject tower;
 
     [Header("Attribute")]
+
+    [SerializeField]
+    private TowerField value;
+
     [SerializeField] private float targetingRange = 5f;
     [SerializeField] private float rotationSpeed = 5f;
     [SerializeField] private float bps = 1f;
@@ -28,13 +32,33 @@ public class Turret : MonoBehaviour
     public List<GameObject> targets;
     
 
+    
+    public List<GameObject> bulletPool= new List<GameObject>();
+    int maxPool=3;
+    //int bulletIndex = 0;
 
 
 
     private void Start()
     {
-    
-       
+        // example get file value
+        value = ConfigUtils.GetTowerIceField();
+        bulletPool = new List<GameObject>();
+
+        for (int i = 0; i < maxPool; i++)
+        {
+            GameObject bullet = NewABullet();
+            //bullet.name= + i.ToString();
+            bulletPool.Add(bullet);
+            bullet.SetActive(false);
+        }
+        
+
+    }
+
+    GameObject NewABullet()
+    {
+        return Instantiate(bulletPrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
     private void Update()
@@ -80,8 +104,38 @@ public class Turret : MonoBehaviour
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-        GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, targetRotation);
+
+
+        GameObject bulletObj =null ;
+
+        foreach (GameObject bullet in bulletPool)
+        {
+            if ( !bullet.activeSelf)
+            {
+
+                bulletObj = bullet;
+                break;
+            }
+
+        }
+        
+        if (bulletObj == null)
+        {
+            bulletObj= NewABullet();
+            bulletPool.Add(bulletObj);
+
+            Debug.LogError("create");
+        }
+        
+
+        //GameObject bulletObj = Instantiate(bulletPrefab, firingPoint.position, targetRotation);
+        bulletObj.transform.position = firingPoint.position;
+        bulletObj.transform.rotation = targetRotation;
+
         Bullet bulletScript = bulletObj.GetComponent<Bullet>();
+
+
+        bulletObj.SetActive(true);
         bulletScript.SetTarget(target);
     }
 
