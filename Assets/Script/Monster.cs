@@ -69,7 +69,7 @@ public class Monster : MonoBehaviour
                 else if (transform.position.x > target.GetComponent<Transform>().position.x)
                 {
                     animator.SetInteger("direction", 0);
-                    transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y);
                 }
                 else
                 {
