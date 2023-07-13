@@ -28,15 +28,12 @@ public class Turret : MonoBehaviour
     public List<GameObject> targets;
     
 
-    TowerIO value;
+
 
 
     private void Start()
     {
-        value = new TowerIO(
-            fileName: "turret.csv",
-            filePath: "Tower/Turret"
-            );
+    
        
     }
 
