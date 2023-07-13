@@ -6,6 +6,10 @@ public static class NotificationManager
 {
 
     static Queue<Notification> listNotifications = new Queue<Notification>();
+    public static void Init()
+    {
+        listNotifications = new Queue<Notification>();
+    }
 
     public static void AddNotification(Notification notification)
     {

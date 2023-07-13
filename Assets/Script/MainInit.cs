@@ -9,6 +9,7 @@ public class MainInit : MonoBehaviour
     {
         // initialize configuration utils
         ConfigUtils.InitializeData();
+        NotificationManager.Init();
     }
     // Start is called before the first frame update
     void Start()

@@ -328,8 +328,8 @@ GameObject:
   - component: {fileID: 2227762880307190610}
   - component: {fileID: 2227762880307190611}
   - component: {fileID: 2227762880307190615}
-  - component: {fileID: 2227762880307190608}
   - component: {fileID: 2227762880307190614}
+  - component: {fileID: 4428308257787105619}
   m_Layer: 6
   m_Name: Monster
   m_TagString: Untagged
@@ -446,20 +446,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2227762880307190608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2227762880307190620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34a7c2146ef433742b2d6cacec1d2bf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 2227762880307190615}
-  moveSpeed: 2
 --- !u!58 &2227762880307190614
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -476,3 +462,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.32
+--- !u!114 &4428308257787105619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2227762880307190620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074379c5f1e320f47aec094b4a2873ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2227762880307190615}
+  hearts: []

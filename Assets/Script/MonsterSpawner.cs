@@ -12,7 +12,7 @@ using UnityEngine.UI;
 public class MonsterSpawner : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private GameObject[] MonsterPrefabs;
+    [SerializeField] private Monster[] MonsterPrefabs;
     [SerializeField] private Button btnPause;
     [SerializeField] private Text textPrice;
     [SerializeField] private GameObject[] hearts;
@@ -38,6 +38,9 @@ public class MonsterSpawner : MonoBehaviour
     public static bool isTowerSold = false;
     public static bool isUpgrade = false;
     public static bool isTowerBought = false;
+
+
+    int totalMonster = 0;
     private void Awake()
     {   
          onMonsterDestroy.AddListener(MonsterDestroyed);
@@ -156,7 +159,7 @@ public class MonsterSpawner : MonoBehaviour
     private void SpawnMonster()
     {
         Debug.Log("monster "+monster);
-        GameObject prefabToWpawn;
+        Monster prefabToWpawn;
         if (monster == MonsterPrefabs.Length)
         {
             monster = 0;
@@ -171,7 +174,8 @@ public class MonsterSpawner : MonoBehaviour
         {
             prefabToWpawn = MonsterPrefabs[monster];
         }
-        Instantiate(prefabToWpawn, LevelManager.main.startPoint.GetComponent<Transform>().position, Quaternion.identity);
+        Instantiate(prefabToWpawn, LevelManager.main.startPoint.GetComponent<Transform>().position, Quaternion.identity).name = "MonsterActive "+ totalMonster;
+        totalMonster++;
         
     }
 
