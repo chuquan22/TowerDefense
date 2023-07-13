@@ -11191,13 +11191,17 @@ MonoBehaviour:
   - {fileID: 2227762880307190620, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
   - {fileID: 5043798957912043830, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
   - {fileID: 3794802503688587050, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
-  textPrice: {fileID: 0}
+  - {fileID: 3277896136331005442, guid: bf9397ed58315eb4bb2b995802d94f2f, type: 3}
+  - {fileID: 6447351744282218568, guid: 4e07b3961f721fb40b9bf33e68c134d0, type: 3}
+  - {fileID: 2922384989311180001, guid: 63f1d1125f49ba24093d368e966d983f, type: 3}
+  btnPause: {fileID: 884367027}
+  textPrice: {fileID: 40446113}
   hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1659363233}
+  - {fileID: 1108398154}
+  - {fileID: 419667143}
+  - {fileID: 1538881515}
+  - {fileID: 613456121}
   baseMonster: 8
   MonsterPerSecond: 0.5
   timeBetweenWaves: 5
@@ -11265,40 +11269,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3da3ad6946c7eb749b104d9d1e1f39c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 0}
+  startPoint: {fileID: 1433806135}
   path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 811129442}
+  - {fileID: 1080707593}
+  - {fileID: 2033796569}
+  - {fileID: 601408124}
+  - {fileID: 1830009404}
+  - {fileID: 1300136605}
+  - {fileID: 989595878}
+  - {fileID: 1703239698}
+  - {fileID: 1999305954}
+  - {fileID: 1337395276}
+  - {fileID: 1211298438}
+  - {fileID: 356577194}
+  - {fileID: 384157712}
+  - {fileID: 1607145789}
+  - {fileID: 699301924}
+  - {fileID: 1786588005}
+  - {fileID: 248047097}
+  - {fileID: 103679923}
+  - {fileID: 1755674296}
+  - {fileID: 1525143243}
+  - {fileID: 2093913091}
+  - {fileID: 61716758}
+  - {fileID: 1294986212}
+  - {fileID: 1549748739}
+  - {fileID: 1314269505}
+  - {fileID: 2130057024}
+  - {fileID: 1459151671}
+  - {fileID: 861153769}
+  - {fileID: 1319096830}
+  - {fileID: 48584816}
+  - {fileID: 1637915937}
+  - {fileID: 198106883}
   direction: 
 --- !u!4 &632473216
 Transform:
@@ -12034,7 +12038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &884367027

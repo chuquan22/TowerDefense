@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -13,9 +13,9 @@ public class Monster : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
-    protected float moveSpeed = 2f;
+    protected float moveSpeed = 1f;
     private Animator animator;
-    protected int maxHP = 100;
+    public static int maxHP = 10;
     public static float currentHP;
 
     //public static int price = 0;
@@ -36,6 +36,7 @@ public class Monster : MonoBehaviour
         animator = GetComponent<Animator>();
         slider= GetComponentInChildren<Slider>();
         slider.maxValue = maxHP; slider.minValue = 0;
+        slider.value = maxHP;
     }
     private void Update()
     {
@@ -90,12 +91,12 @@ public class Monster : MonoBehaviour
         rb.velocity = direction * moveSpeed;
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(int damage)
     {
-        currentHP -= damage;
-        slider.value = currentHP;
-        Debug.Log(currentHP);
-        if(currentHP <= 0)
+        maxHP -= damage;
+        slider.value = maxHP;
+        Debug.Log(maxHP);
+        if(maxHP <= 0)
         {
             MonsterSpawner.onMonsterDestroy.Invoke();
             Destroy(gameObject);

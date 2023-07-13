@@ -10,7 +10,7 @@ public class Bullet : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float bulletSpeed = 5f;
 
-    [SerializeField] private float damage = 20f;
+    [SerializeField] private int damage = 20;
 
     private Transform target;
     public void SetTarget(Transform _target)
@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
     {
         Destroy(gameObject);
         Monster monster = other.gameObject.GetComponent<Monster>();
-        MonsterFly monsterFly = other.gameObject.GetComponent<MonsterFly>();
+        Butterfly monsterFly = other.gameObject.GetComponent<Butterfly>();
         if (monster != null)
         {
             monster.TakeDamage(damage);
