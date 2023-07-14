@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assets.Script.Towers
+namespace Assets.Script.Bullets
 {
-    public class IceTower : Tower
+    public class LightBullet : Bullet
     {
-        protected override void Start()
+        public override void Start()
         {
-            value = ConfigUtils.GetTowerIceField();
+            bulletSpeed= 7;
+            damage= 10;
             base.Start();
         }
-
-        
     }
 }

@@ -20,7 +20,7 @@ public class ConfigIO
     TowerField defaultTowerField = new TowerField
     {
         TargetingRange = 3f,
-        RotationSpeed = 5f,
+        RotationSpeed = 200f,
         Bps = 1f,
         Cost = 10,
         UpdateCost_lv2 = 5,
