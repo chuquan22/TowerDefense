@@ -12,7 +12,7 @@ public class Plot : MonoBehaviour
 
     public static Plot main;
     public GameObject tower;
-    public Turret turret;
+    public Tower turret;
     private Color startColor;
 
     private void Awake()
@@ -43,7 +43,8 @@ public class Plot : MonoBehaviour
             turret.OpenUpgradeUI();
             return;
         }
-        try {
+        if (BuildManager.main.GetSelectedTower() != null)
+        {
             TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
             // if money player bigger or equal tower's price
             if (MonsterSpawner.price >= towerToBuild.cost)
@@ -51,13 +52,15 @@ public class Plot : MonoBehaviour
                 MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
                 MonsterSpawner.isTowerBought = true;
                 tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-                turret = tower.GetComponent<Turret>();
+                turret = tower.GetComponent<Tower>();
+                BuildManager.main.SetDefaultSelectedTower();
+            }
+            else
+            {
+                Debug.Log("Not Enough Price!");
             }
         }
-        catch(System.Exception e)
-        {
-            Debug.Log(e.ToString());
-        }
+        
         gameObject.SetActive(false);
     }
 

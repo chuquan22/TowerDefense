@@ -7,7 +7,6 @@ public class TowerUpgrade : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 {
     private bool mouse_over = false;
 
-
     public void OnPointerEnter(PointerEventData eventData)
     {
         mouse_over= true;
