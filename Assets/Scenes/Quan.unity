@@ -1580,7 +1580,7 @@ RectTransform:
   m_GameObject: {fileID: 40446111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0001062, y: 1.0001062, z: 1.0001062}
+  m_LocalScale: {x: 1, y: 1.0001062, z: 1.0001062}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 855511253}
@@ -1615,9 +1615,9 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 20
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -11129,7 +11129,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 632473213}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -11507,7 +11507,7 @@ MonoBehaviour:
     prefab: {fileID: 6922874079956346840, guid: d225fe3de9072af4189a4d8235ef3dd1, type: 3}
   - name: LightningTower
     cost: 25
-    prefab: {fileID: 3982248871318747084, guid: 3d7a240b81e0034418a1e69f98b0bd1a, type: 3}
+    prefab: {fileID: 3982248871318747084, guid: b28704a48eed4c343813ddbb0e805133, type: 3}
   - name: ShockTower
     cost: 30
     prefab: {fileID: 8946976499225789358, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
@@ -12170,7 +12170,7 @@ Transform:
   m_GameObject: {fileID: 855511251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -54.654205, y: 1.9748269, z: -2148.5222}
-  m_LocalScale: {x: 47.744934, y: 47.744934, z: 23.872467}
+  m_LocalScale: {x: 52.2, y: 50, z: 23.872467}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 40446112}
@@ -12290,7 +12290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 632473213}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -12686,7 +12686,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 632473213}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -13184,7 +13184,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 632473213}
         m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
         m_MethodName: SetSeclectedTower
         m_Mode: 3
@@ -14305,10 +14305,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -5454904625009985312, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
-      propertyPath: targetingRange
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6004190410030244624, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14359,7 +14355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8946976499225789358, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd810ae237a43bc49979d1e6e7e51c9a, type: 3}

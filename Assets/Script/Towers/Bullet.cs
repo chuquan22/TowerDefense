@@ -8,16 +8,19 @@ public class Bullet : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
     [Header("Attributes")]
-    [SerializeField] private float bulletSpeed = 5f;
+    [SerializeField] protected float bulletSpeed = 5f;
 
-    [SerializeField] private float damage = 20f;
+    [SerializeField] protected float damage = 20f;
 
-    private Transform target;
+    protected Transform target;
     public void SetTarget(Transform _target)
     {
         target = _target;
     }
+    public virtual void Start()
+    {
 
+    }
     private void FixedUpdate()
     {
         if (!target)

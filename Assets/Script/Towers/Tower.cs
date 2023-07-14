@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEditor;
 using System;
 
-public class Turret : MonoBehaviour
+public class Tower : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Transform turretRotationPoint;
@@ -18,18 +18,17 @@ public class Turret : MonoBehaviour
     [Header("Attribute")]
 
     [SerializeField]
-    private TowerField value;
+    protected TowerField value;
 
-    [SerializeField] private float targetingRange = 5f;
-    [SerializeField] private float rotationSpeed = 5f;
-    [SerializeField] private float bps = 1f;
-    [SerializeField] private int baseUpgradeCost = 30;
+    //[SerializeField] private float targetingRange = 5f;
+    //[SerializeField] private float rotationSpeed = 5f;
+    //[SerializeField] private float bps = 1f;
+    //[SerializeField] private int baseUpgradeCost = 30;
     [SerializeField] private int level = 1;
 
-    public Animator animator;
     private Transform target;
     private float timeUntilFire;
-    public List<GameObject> targets;
+    //public List<GameObject> targets;
     
 
     
@@ -39,10 +38,9 @@ public class Turret : MonoBehaviour
 
 
 
-    private void Start()
+    protected virtual void Start()
     {
-        // example get file value
-        value = ConfigUtils.GetTowerIceField();
+        
         bulletPool = new List<GameObject>();
 
         for (int i = 0; i < maxPool; i++)
@@ -75,17 +73,13 @@ public class Turret : MonoBehaviour
 
         if (!CheckTargetIsInRange())
         {
-            if (animator != null)
-            {
-                animator.SetBool("Attack", false);
-            }
             target = null;
         }
         else
         {
 
             timeUntilFire += Time.deltaTime;
-            if (timeUntilFire >= 1f / bps)
+            if (timeUntilFire >= 1f / value.Bps)
             {
 
                 Shoot();
@@ -97,10 +91,6 @@ public class Turret : MonoBehaviour
 
     private void Shoot()
     {
-        if (animator != null)
-        {
-            animator.SetBool("Attack", true);
-        }
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
@@ -141,7 +131,7 @@ public class Turret : MonoBehaviour
 
     private void FindTarget()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, targetingRange, (Vector2)
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, value.TargetingRange, (Vector2)
             transform.position, 0f, enemyMask);
 
         if (hits.Length > 0)
@@ -152,7 +142,7 @@ public class Turret : MonoBehaviour
 
     private bool CheckTargetIsInRange()
     {
-        return Vector2.Distance(target.position, transform.position) <= targetingRange;
+        return Vector2.Distance(target.position, transform.position) <= value.TargetingRange;
     }
 
 
@@ -163,7 +153,7 @@ public class Turret : MonoBehaviour
             float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-            turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+            turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, value.RotationSpeed * Time.deltaTime);
         }
         catch (Exception ex)
         {
@@ -173,31 +163,39 @@ public class Turret : MonoBehaviour
 
     public void Upgrade()
     {
-        if (CaculateCost() > MonsterSpawner.price) return;
+        if (CaculateCostUpgrade() > MonsterSpawner.price) return;
 
-        int newPrice = MonsterSpawner.price - CaculateCost();
+        int newPrice = MonsterSpawner.price - CaculateCostUpgrade();
         MonsterSpawner.price = newPrice;
         MonsterSpawner.isUpgrade = true;
         level++;
-        bps = CaculateBPS();
-        targetingRange = CaculateRange();
+        value.Bps = CaculateBPS();
+        value.TargetingRange = CaculateRange();
         Instantiate(tower, transform.position, Quaternion.identity);
         Destroy(gameObject);
         CloseUpgradeUI();
     }
 
-    private int CaculateCost()
+    private int CaculateCostUpgrade()
     {
-        return Mathf.RoundToInt( baseUpgradeCost * Mathf.Pow(level, 0.8f));
+        if (level == 1) { return value.UpdateCost_lv2; }
+        else return value.UpdateCost_lv3;
+    }
+
+    private int CaculateCostSell()
+    {
+        if (level == 1) { return (int)(value.Cost * 0.8); }
+        else if (level == 2) { return (int)(value.UpdateCost_lv2 * 0.8); }
+        else return (int)(value.UpdateCost_lv3* 0.8);
     }
 
     private float CaculateBPS()
     {
-        return bps * Mathf.Pow(level, 0.5f);
+        return value.Bps * Mathf.Pow(level, 0.5f);
     }
     private float CaculateRange()
     {
-        return targetingRange * Mathf.Pow(level, 0.4f);
+        return value.TargetingRange * Mathf.Pow(level, 0.4f);
     }
     public void OpenUpgradeUI()
     {
@@ -208,11 +206,7 @@ public class Turret : MonoBehaviour
         upgradeUI.SetActive(false);
         UIManager.main.SetHoveringState(false);
     }
-    private void OnDrawGizmosSelected()
-    {
-        Handles.color = Color.cyan;
-        Handles.DrawWireDisc(transform.position, transform.forward, targetingRange);
-    }
+    
 
     private void OnMouseDown()
     {
@@ -226,7 +220,7 @@ public class Turret : MonoBehaviour
     public void Sell()
     {
 
-        int newPrice = MonsterSpawner.price + 20;
+        int newPrice = MonsterSpawner.price + CaculateCostSell();
         //Debug.Log("Tower cost : " + TowerTest.cost);
         Debug.Log("New price : " + newPrice);
         // set price

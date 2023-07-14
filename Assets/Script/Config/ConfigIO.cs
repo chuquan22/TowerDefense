@@ -19,11 +19,12 @@ public class ConfigIO
 
     TowerField defaultTowerField = new TowerField
     {
-        TargetingRange = 5f,
+        TargetingRange = 3f,
         RotationSpeed = 5f,
         Bps = 1f,
         Cost = 10,
-        UpdateCost = 5,
+        UpdateCost_lv2 = 5,
+        UpdateCost_lv3= 6,
     };
 
     MonsterField defaultMonsterField = new MonsterField { MaxHP = 100, MoveSpeed = 2f, Price= 3 };
@@ -139,7 +140,7 @@ public class ConfigIO
 
 
                 writer.WriteLine("TargetingRange,RotationSpeed,Bps, Cost, UpdateCost");
-                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps},{tower.Cost},{tower.UpdateCost}");
+                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps},{tower.Cost},{tower.UpdateCost_lv2}");
             }
             else
             {
@@ -200,7 +201,7 @@ public class ConfigIO
             tower.RotationSpeed = float.Parse(values[1]);
             tower.Bps = float.Parse(values[2]);
             tower.Cost = int.Parse(values[3]);
-            tower.UpdateCost = int.Parse(values[4]);
+            tower.UpdateCost_lv2 = int.Parse(values[4]);
 
 
             //targetingRange = float.Parse(values[0]);

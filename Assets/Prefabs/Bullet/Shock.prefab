@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4810324229710233140}
   - component: {fileID: 4810324229710233139}
   - component: {fileID: 3383981070217619480}
-  - component: {fileID: 4998317431282162236}
   - component: {fileID: -6481831222416595874}
+  - component: {fileID: -3718277092171267903}
   m_Layer: 7
   m_Name: Shock
   m_TagString: Untagged
@@ -124,21 +124,6 @@ CircleCollider2D:
   m_Offset: {x: -0.014387608, y: 0}
   serializedVersion: 2
   m_Radius: 1.1095843
---- !u!114 &4998317431282162236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4810324229710233138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c323d5705c594985baf8b84f94346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: -6481831222416595874}
-  bulletSpeed: 0
-  damage: 5
 --- !u!50 &-6481831222416595874
 Rigidbody2D:
   serializedVersion: 4
@@ -160,3 +145,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3718277092171267903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4810324229710233138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a0c647b94d7064dbf9ed17366f62d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -6481831222416595874}
+  bulletSpeed: 0
+  damage: 20
