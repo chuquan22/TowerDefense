@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7389605182554674131}
-  - component: {fileID: 7584542125893210497}
+  - component: {fileID: 5415527032971152654}
   m_Layer: 0
   m_Name: IceBowTower_lv3
   m_TagString: Untagged
@@ -226,7 +226,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7584542125893210497
+--- !u!114 &5415527032971152654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -235,7 +235,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292279257743563965}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2995d431d50e09c4ba16d4532b4f2549, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a52bc739810f7d478d3956d0d9882a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turretRotationPoint: {fileID: 8727793092762207905}
@@ -244,15 +244,10 @@ MonoBehaviour:
     m_Bits: 64
   bulletPrefab: {fileID: 7234708255889411561, guid: fc9aa9e8880b4394ebd5803d96120c2e, type: 3}
   firingPoint: {fileID: 6486278409391387205}
-  upgradeUI: {fileID: 0}
+  upgradeUI: {fileID: 1160785162236493666}
   tower: {fileID: 0}
-  targetingRange: 5
-  rotationSpeed: 200
-  bps: 4
-  baseUpgradeCost: 500
   level: 3
-  animator: {fileID: 0}
-  targets: []
+  bulletPool: []
 --- !u!1 &4550503962378257400
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,8 +402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7584542125893210497}
-        m_TargetAssemblyTypeName: Turret, Assembly-CSharp
+      - m_Target: {fileID: 5415527032971152654}
+        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
         m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
