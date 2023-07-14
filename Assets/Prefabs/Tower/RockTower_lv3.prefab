@@ -121,8 +121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8623464461162036672}
-        m_TargetAssemblyTypeName: Turret, Assembly-CSharp
+      - m_Target: {fileID: 6496719716034110850}
+        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
         m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
@@ -206,8 +206,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4559928249312269674}
-  - component: {fileID: 8623464461162036672}
   - component: {fileID: -5811268803510406894}
+  - component: {fileID: 6496719716034110850}
   m_Layer: 0
   m_Name: RockTower_lv3
   m_TagString: Untagged
@@ -233,33 +233,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8623464461162036672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4454544163925968167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2995d431d50e09c4ba16d4532b4f2549, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretRotationPoint: {fileID: 3058840861881426903}
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletPrefab: {fileID: 498670631283562357, guid: c3941830fe936b0449fb3da79ffcf3ee, type: 3}
-  firingPoint: {fileID: 6319783796612922481}
-  upgradeUI: {fileID: 6284377904135523278}
-  tower: {fileID: 0}
-  targetingRange: 5
-  rotationSpeed: 200
-  bps: 1
-  baseUpgradeCost: 70
-  level: 1
-  animator: {fileID: 0}
-  targets: []
 --- !u!61 &-5811268803510406894
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -286,6 +259,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6496719716034110850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454544163925968167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd20735c7a0515e49821cf28fc5655a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretRotationPoint: {fileID: 3058840861881426903}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
+  bulletPrefab: {fileID: 498670631283562357, guid: c3941830fe936b0449fb3da79ffcf3ee, type: 3}
+  firingPoint: {fileID: 6319783796612922481}
+  upgradeUI: {fileID: 6284377904135523278}
+  tower: {fileID: 0}
+  level: 3
+  bulletPool: []
 --- !u!1 &6284377904135523278
 GameObject:
   m_ObjectHideFlags: 0

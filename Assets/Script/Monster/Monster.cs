@@ -13,9 +13,10 @@ public class Monster : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
-    protected float moveSpeed = 2f;
+    public float moveSpeed = 2f;
     private Animator animator;
-    protected int maxHP = 100;
+    public static int maxHP = 30;
+    public const int BONUS_PRICE_MONSTER = 10;
     public static float currentHP;
 
     //public static int price = 0;
@@ -23,7 +24,7 @@ public class Monster : MonoBehaviour
 
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
-    public const int BONUS_PRICE_MONSTER = 10;
+    
 
     Slider slider;
 
@@ -41,6 +42,7 @@ public class Monster : MonoBehaviour
     }
     private void Update()
     {
+        
         if(Vector2.Distance(target.GetComponent<Transform>().position, transform.position) <= 0.1f)
         {
             
@@ -105,4 +107,9 @@ public class Monster : MonoBehaviour
         }
     }
 
+    public void SetSpeed()
+    {
+        moveSpeed = (float)(moveSpeed * 0.8);
+        Debug.Log("Move : " + moveSpeed);
+    }
 }

@@ -67,9 +67,12 @@ public static class ConfigUtils
             TowerField value = new TowerField
             {
 
-                TargetingRange = 0,
-                RotationSpeed = 0,
-                Bps = 0
+                TargetingRange = 3,
+                RotationSpeed = 200,
+                Bps = 1,
+                Cost = 20,
+                UpdateCost_lv2 = 40,
+                UpdateCost_lv3 = 80
             };
 
             io.CreateTowerIO(fileName: fileName, filePath: filePath, value);
@@ -89,9 +92,9 @@ public static class ConfigUtils
             TowerField value = new TowerField
             {
 
-                TargetingRange = 0,
-                RotationSpeed = 0,
-                Bps = 0
+                TargetingRange = 4,
+                RotationSpeed = 5,
+                Bps = 1
             };
             io.CreateTowerIO(fileName: fileName, filePath: filePath, value);
             InitRockTower();
@@ -109,9 +112,12 @@ public static class ConfigUtils
             TowerField value = new TowerField
             {
 
-                TargetingRange = 0,
+                TargetingRange = 3,
                 RotationSpeed = 0,
-                Bps = 0
+                Bps = 1,
+                Cost = 30,
+                UpdateCost_lv2 = 50,
+                UpdateCost_lv3 = 100
             };
             io.CreateTowerIO(fileName: fileName, filePath: filePath, value);
             InitShockTower();
@@ -129,9 +135,12 @@ public static class ConfigUtils
             TowerField value = new TowerField
             {
 
-                TargetingRange = 0,
+                TargetingRange = 4,
                 RotationSpeed = 0,
-                Bps = 0
+                Bps = 2,
+                Cost = 35,
+                UpdateCost_lv2 = 60,
+                UpdateCost_lv3 = 100
             };
             io.CreateTowerIO(fileName: fileName, filePath: filePath, value);
             InitLightTower();
@@ -150,7 +159,8 @@ public static class ConfigUtils
             {
 
                 MaxHP = 100,
-                MoveSpeed = 2f
+                MoveSpeed = 2f,
+                Price = 10
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
             InitFlyMonster();
