@@ -16,6 +16,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private Button btnPause;
     [SerializeField] private Text textPrice;
     [SerializeField] private GameObject[] hearts;
+    [SerializeField] private Button btnWave;
     [Header("Attributes")]
     [SerializeField] private int baseMonster = 8;
     [SerializeField] private float MonsterPerSecond = 0.5f;
@@ -38,7 +39,8 @@ public class MonsterSpawner : MonoBehaviour
     public static bool isTowerSold = false;
     public static bool isUpgrade = false;
     public static bool isTowerBought = false;
-
+    private static int wave = 1;
+    private TMP_Text textWave;
 
     int totalMonster = 0;
     private void Awake()
@@ -46,11 +48,13 @@ public class MonsterSpawner : MonoBehaviour
          onMonsterDestroy.AddListener(MonsterDestroyed);
          textPrice.text = price.ToString();
          index = MAX_INDEX_MONSTER;
+         textWave = btnWave.GetComponentInChildren<TMP_Text>();
     }
     private void Start()
     {
         StartCoroutine(StartWave());
         btnPause.onClick.AddListener(LoadPauseScene);
+        textWave.text = wave.ToString();
     }
 
     private void LoadPauseScene()
@@ -93,12 +97,13 @@ public class MonsterSpawner : MonoBehaviour
             textPrice.text = price.ToString();
             isTowerBought = false;
         }
-
+        /*
         // if player dead
         if (Player.isDead())
         {
             LoadGameOverScene();
         }
+        */
         if (!isSpawning)
         {
             return;
@@ -113,9 +118,10 @@ public class MonsterSpawner : MonoBehaviour
             timeSinceLastSpawn = 0f;
         }
 
-        if(monsterAlive== 0 && MonsterLeftToSpawn ==0)
+        if(monsterAlive == 0 && MonsterLeftToSpawn ==0)
         {
             EndWave();
+            Invoke("NextWave", 4f);
         }
 
         // if monster destroyed
@@ -134,6 +140,12 @@ public class MonsterSpawner : MonoBehaviour
             MonsterFly.isMonsterFlyDestroyed = false;
         }
 
+    }
+
+    private void NextWave()
+    {
+        wave++;
+        textWave.text = wave.ToString();
     }
 
     private void MonsterDestroyed()
@@ -158,7 +170,6 @@ public class MonsterSpawner : MonoBehaviour
 
     private void SpawnMonster()
     {
-        Debug.Log("monster "+monster);
         Monster prefabToWpawn;
         if (monster == MonsterPrefabs.Length)
         {

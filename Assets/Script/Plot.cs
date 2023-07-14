@@ -14,7 +14,7 @@ public class Plot : MonoBehaviour
     public GameObject tower;
     public Turret turret;
     private Color startColor;
-
+    public static bool isNotEnoughMoney = false;
     private void Awake()
     {
         main = this;
@@ -34,24 +34,28 @@ public class Plot : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (UIManager.main.IsHoveringUI())
-        {
-            return;
-        }
+        TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
+        Debug.Log("Current price : " + MonsterSpawner.price);
+        Debug.Log("Bigger: " + (MonsterSpawner.price >= towerToBuild.cost)); 
+
         if (tower != null)
         {
             turret.OpenUpgradeUI();
             return;
         }
         try {
-            TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
             // if money player bigger or equal tower's price
             if (MonsterSpawner.price >= towerToBuild.cost)
             {
                 MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
+                // Debug.Log("Tower price : " + towerToBuild.cost);
                 MonsterSpawner.isTowerBought = true;
                 tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
                 turret = tower.GetComponent<Turret>();
+            }
+            else
+            {
+                isNotEnoughMoney = true;
             }
         }
         catch(System.Exception e)
@@ -59,6 +63,13 @@ public class Plot : MonoBehaviour
             Debug.Log(e.ToString());
         }
         gameObject.SetActive(false);
+
+        /*
+        if (UIManager.main.IsHoveringUI())
+        {
+            return;
+        }
+        */
     }
 
     public void Upgrade()

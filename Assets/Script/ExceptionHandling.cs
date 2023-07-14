@@ -36,10 +36,13 @@ public class ExceptionHandling : MonoBehaviour
         {
             ShowNotification();
         }
-
-      
-        
-        //message.text = "abc" + notificationUI;
+        if (Plot.isNotEnoughMoney)
+        {
+            notificationUI.SetActive(true);
+            title.text = "Warning";
+            message.text = "Not enough money";
+            Plot.isNotEnoughMoney = false;
+        }
 
     }
 
@@ -52,7 +55,7 @@ public class ExceptionHandling : MonoBehaviour
 
         title.text = notification.Title;
         message.text = notification.Message;
-        
+        notificationUI.SetActive(true);
     }
 }
 

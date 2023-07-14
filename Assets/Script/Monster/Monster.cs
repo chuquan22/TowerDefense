@@ -96,7 +96,7 @@ public class Monster : MonoBehaviour
     {
         currentHP -= damage;
         slider.value -= damage;
-        Debug.Log(gameObject.name + ": "+  slider.value);
+       // Debug.Log(gameObject.name + ": "+  slider.value);
         if(currentHP <= 0)
         {
             MonsterSpawner.onMonsterDestroy.Invoke();
