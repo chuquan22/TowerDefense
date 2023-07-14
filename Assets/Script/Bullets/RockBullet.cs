@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Assets.Script.Towers
 {
-    public class IceTower : Tower
+    public class RockBullet : Bullet
     {
-        protected override void Start()
+        public override void Start()
         {
-            value = ConfigUtils.GetTowerIceField();
+            bulletSpeed = 4;
+            damage = 20;
             base.Start();
         }
-
-        
     }
 }

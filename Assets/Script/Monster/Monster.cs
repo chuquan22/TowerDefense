@@ -24,12 +24,22 @@ public class Monster : MonoBehaviour
 
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
-    
-
+    public static Monster main;
+    private float currentSpeed = 0;
+    private int time;
     Slider slider;
 
     public static bool isPassed = false;
-
+    public void SetSpeed()
+    {
+        currentSpeed = (float)(moveSpeed * 0.2);
+        Debug.Log(gameObject.name);
+        time = 0;
+    }
+    public void Awake()
+    {
+        main = this;
+    }
     public virtual void Start()
     {
         currentHP = maxHP;
@@ -90,8 +100,19 @@ public class Monster : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 direction = (target.GetComponent<Transform>().position - transform.position).normalized;
+        if(currentSpeed > 0 && time <=10)
+        {
+            rb.velocity = direction * currentSpeed;
+            time++;
+            Debug.Log(gameObject.name +":"+ currentSpeed);
+        }
+        else
+        {
+            rb.velocity = direction * moveSpeed;
+            time = 0;
+            currentSpeed= 0;
+        }
         
-        rb.velocity = direction * moveSpeed;
     }
 
     public virtual void TakeDamage(float damage)
@@ -107,9 +128,5 @@ public class Monster : MonoBehaviour
         }
     }
 
-    public void SetSpeed()
-    {
-        moveSpeed = (float)(moveSpeed * 0.8);
-        Debug.Log("Move : " + moveSpeed);
-    }
+    
 }

@@ -29,7 +29,7 @@ public class Tower : MonoBehaviour
     private Transform target;
     private float timeUntilFire;
     //public List<GameObject> targets;
-    
+    public Tower main;
 
     
     public List<GameObject> bulletPool= new List<GameObject>();
@@ -59,7 +59,7 @@ public class Tower : MonoBehaviour
         return Instantiate(bulletPrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
-    private void Update()
+    protected virtual void Update()
     {
 
 
@@ -151,13 +151,12 @@ public class Tower : MonoBehaviour
         try
         {
             float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
-
             Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
             turretRotationPoint.rotation = Quaternion.RotateTowards(turretRotationPoint.rotation, targetRotation, value.RotationSpeed * Time.deltaTime);
         }
         catch (Exception ex)
         {
-
+            
         }
     }
 

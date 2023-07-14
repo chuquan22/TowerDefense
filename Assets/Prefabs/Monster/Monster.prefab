@@ -224,7 +224,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1934071915}
   - component: {fileID: 1934071916}
-  - component: {fileID: 7794713977226069240}
   m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
@@ -304,18 +303,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7794713977226069240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934071914}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b198c92cf1e1904489dca0e8fa9ecd88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2227762880307190620
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,3 +463,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2227762880307190615}
   hearts: []
+  moveSpeed: 2
