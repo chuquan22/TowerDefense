@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 7788763481868032862}
   - component: {fileID: 6219986810900706780}
   - component: {fileID: 7377955460034656607}
-  - component: {fileID: 2008891949464630483}
+  - component: {fileID: 7475121725192437820}
   m_Layer: 6
   m_Name: Monster2
   m_TagString: Untagged
@@ -412,7 +412,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24
---- !u!114 &2008891949464630483
+--- !u!114 &7475121725192437820
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5043798957912043830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074379c5f1e320f47aec094b4a2873ba, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6574e9ecbaf7143902bb21be0e812d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 6219986810900706780}
