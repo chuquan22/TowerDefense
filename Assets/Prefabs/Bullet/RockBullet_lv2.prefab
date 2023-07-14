@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2745614831977272929}
   - component: {fileID: 3741838983887668091}
   - component: {fileID: 7217871862498207053}
-  - component: {fileID: 5780610158523385256}
+  - component: {fileID: 4144629735711740376}
   m_Layer: 7
   m_Name: RockBullet_lv2
   m_TagString: Untagged
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &5780610158523385256
+--- !u!114 &4144629735711740376
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +164,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7003410693796073596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c323d5705c594985baf8b84f94346, type: 3}
+  m_Script: {fileID: 11500000, guid: 0037913414c849c4aa9da8b14ba3396c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7217871862498207053}
-  bulletSpeed: 4
-  damage: 35
+  bulletSpeed: 5
+  damage: 25

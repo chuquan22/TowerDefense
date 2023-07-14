@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6177379963283535279}
   - component: {fileID: -7023997412517277202}
   - component: {fileID: -7623396976365825190}
-  - component: {fileID: 1474376374241246275}
+  - component: {fileID: 4500379684265097301}
   m_Layer: 0
   m_Name: ShockBullet_lv2
   m_TagString: Untagged
@@ -145,7 +145,7 @@ CircleCollider2D:
   m_Offset: {x: 0.0048373938, y: 0}
   serializedVersion: 2
   m_Radius: 1.5828961
---- !u!114 &1474376374241246275
+--- !u!114 &4500379684265097301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,9 +154,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4534854369998045474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a0c647b94d7064dbf9ed17366f62d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0037913414c849c4aa9da8b14ba3396c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -7023997412517277202}
   bulletSpeed: 0
-  damage: 5
+  damage: 10

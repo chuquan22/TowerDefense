@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6178298094520793239}
   - component: {fileID: 2812621498917147582}
   - component: {fileID: 5394065678420864299}
-  - component: {fileID: 3857550676466366538}
+  - component: {fileID: 3936827509513828024}
   m_Layer: 7
   m_Name: Lightning
   m_TagString: Untagged
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &3857550676466366538
+--- !u!114 &3936827509513828024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +164,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 378808935572047764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c323d5705c594985baf8b84f94346, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c763fb0afe911141847b5367d57add6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5394065678420864299}
   bulletSpeed: 5
-  damage: 25
+  damage: 20

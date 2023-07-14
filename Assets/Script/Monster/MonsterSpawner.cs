@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -26,7 +26,7 @@ public class MonsterSpawner : MonoBehaviour
     [Header("Events")]
     public static UnityEvent onMonsterDestroy = new UnityEvent();
 
-    private int currentWave = 1;
+    public static int currentWave = 1;
     private float timeSinceLastSpawn;
     private int monsterAlive;
     private int MonsterLeftToSpawn;
@@ -181,7 +181,11 @@ public class MonsterSpawner : MonoBehaviour
 
     private int MonsterPerWave()
     {
-        return Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
+        int baseMonsterCount = Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
+        int additionalHP = currentWave * 10; // Tăng maxHP của quái tấn công lên 10 sau mỗi lần quái được sinh ra
+        Monster.maxHP += additionalHP;
+        Debug.Log("Max HP :" + Monster.maxHP);
+        return baseMonsterCount;
     }
 
     private void LoadGameOverScene()

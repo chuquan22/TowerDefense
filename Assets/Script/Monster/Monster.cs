@@ -115,7 +115,7 @@ public class Monster : MonoBehaviour
         
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(int damage)
     {
         currentHP -= damage;
         slider.value -= damage;

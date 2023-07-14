@@ -11454,12 +11454,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterPrefabs:
-  - {fileID: 3059892846357462465, guid: 4e07b3961f721fb40b9bf33e68c134d0, type: 3}
-  - {fileID: -7827761801779496356, guid: bf9397ed58315eb4bb2b995802d94f2f, type: 3}
-  - {fileID: 4428308257787105619, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
-  - {fileID: 2008891949464630483, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
-  - {fileID: 8241538599750670340, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
-  - {fileID: 2922384989311180005, guid: 63f1d1125f49ba24093d368e966d983f, type: 3}
+  - {fileID: 6590706798623135221, guid: 2f269207057f50c4e8ae8e9eab391528, type: 3}
+  - {fileID: -84527513949564241, guid: 9e7a2fccafcbee542895a83802f9d007, type: 3}
+  - {fileID: 7475121725192437820, guid: 537c38d5f4c8bd54ca18773832f4bd0a, type: 3}
+  - {fileID: -7454504189412607722, guid: 4e07b3961f721fb40b9bf33e68c134d0, type: 3}
+  - {fileID: 2931519564760648073, guid: f5aae3599c032584bab5cd65d74d562f, type: 3}
+  - {fileID: 8982693621880582801, guid: bf9397ed58315eb4bb2b995802d94f2f, type: 3}
+  - {fileID: -6958644621697552375, guid: 63f1d1125f49ba24093d368e966d983f, type: 3}
   btnPause: {fileID: 884367027}
   textPrice: {fileID: 40446113}
   hearts:
