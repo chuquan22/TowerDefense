@@ -8,13 +8,37 @@ public class Plot : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private SpriteRenderer sr;
-    [SerializeField] private Color hoverColor;
+    [SerializeField] private Transform hoverColor;
 
     public static Plot main;
     public GameObject tower;
-    public Tower turret;
+   // public Tower turret;
     private Color startColor;
 
+    private static Vector3 normal = new Vector3(1, 1, 1);
+    private static Vector3 focused = normal * 2;
+
+    private void Update()
+    {
+        if (tower != null)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+
+        }
+    }
+    public void focusPlot()
+    {
+        gameObject.transform.localScale = focused;
+    }
+
+    public void blurPlot()
+    {
+        gameObject.transform.localScale = normal;
+    }
     private void Awake()
     {
         main = this;
@@ -26,50 +50,59 @@ public class Plot : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        sr.color = hoverColor;
+
+        if (GameObject.Find("Level").GetComponent<BuildManager>().getPlotSelected() == null && tower==null)
+        {
+
+            focusPlot();
+        }
+     
     }
     private void OnMouseExit()
     {
-        sr.color = startColor;
+        if (GameObject.Find("Level").GetComponent<BuildManager>(). getPlotSelected()==null)
+        {
+
+            blurPlot();
+        }
+      
     }
     private void OnMouseDown()
     {
-        if (UIManager.main.IsHoveringUI())
+        if (GameObject.Find("Level").GetComponent<BuildManager>().getPlotSelected() == null)
         {
-            return;
-        }
-        if (tower != null)
-        {
-            turret.OpenUpgradeUI();
-            return;
-        }
-        if (BuildManager.main.GetSelectedTower() != null)
-        {
-            TowerTest towerToBuild = BuildManager.main.GetSelectedTower();
-            // if money player bigger or equal tower's price
-            if (MonsterSpawner.price >= towerToBuild.cost)
+            if (UIManager.main.IsHoveringUI())
             {
-                MonsterSpawner.price = MonsterSpawner.price - towerToBuild.cost;
-                MonsterSpawner.isTowerBought = true;
-                tower = Instantiate(towerToBuild.prefab, transform.position, Quaternion.identity);
-                turret = tower.GetComponent<Tower>();
-                BuildManager.main.SetDefaultSelectedTower();
+                return;
+            }
+            if (tower != null)
+            {
+                tower.GetComponent<Tower>().OpenUpgradeUI();
+                return;
             }
             else
             {
-                NotificationManager.AddNotification(new Notification
-                {
-                    Title = "Warning",
-                    Message = "Not enough price to buy"
-                });
+
+
+                ShowUgradeMenu();
+                focusPlot();
+                GameObject.Find("Level").GetComponent<BuildManager>().setPlotSelected(gameObject);
+
+
             }
         }
-        
-        gameObject.SetActive(false);
+
     }
 
+
+    void ShowUgradeMenu()
+    {
+        GameObject.Find("Menu").GetComponent<Animator>().SetBool("MenuOpen", true);
+
+    }
     public void Upgrade()
     {
+
     }
 
 }

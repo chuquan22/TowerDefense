@@ -236,5 +236,7 @@ public class Tower : MonoBehaviour
 
         Destroy(gameObject);
         Plot.main.gameObject.SetActive(true);
+
+        UIManager.main.SetHoveringState(false);
     }
 }
