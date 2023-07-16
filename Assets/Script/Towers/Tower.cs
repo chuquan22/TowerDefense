@@ -136,7 +136,7 @@ public class Tower : MonoBehaviour
 
         if (hits.Length > 0)
         {
-            target = hits[0].transform;
+            target = hits[0].transform; 
         }
     }
 
@@ -162,8 +162,15 @@ public class Tower : MonoBehaviour
 
     public void Upgrade()
     {
-        if (CaculateCostUpgrade() > MonsterSpawner.price) return;
-
+        if (CaculateCostUpgrade() > MonsterSpawner.price) 
+        {
+            NotificationManager.AddNotification(new Notification
+            {
+                Title = "Warning",
+                Message = "Not enough price to upgrade"
+            });
+            return;
+        } 
         int newPrice = MonsterSpawner.price - CaculateCostUpgrade();
         MonsterSpawner.price = newPrice;
         MonsterSpawner.isUpgrade = true;

@@ -35,6 +35,7 @@ public class ExceptionHandling : MonoBehaviour
         if (!notificationUI.activeSelf && NotificationManager.Count()>0)
         {
             ShowNotification();
+
         }
 
       
@@ -52,7 +53,7 @@ public class ExceptionHandling : MonoBehaviour
 
         title.text = notification.Title;
         message.text = notification.Message;
-        
+        notificationUI.SetActive(true);
     }
 }
 

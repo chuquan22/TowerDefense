@@ -19,7 +19,7 @@ public class GameOver : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Quan");
     }
 
     void Menu()

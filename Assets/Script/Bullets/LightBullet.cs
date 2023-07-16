@@ -10,7 +10,7 @@ namespace Assets.Script.Bullets
     {
         public override void Start()
         {
-            bulletSpeed= 7;
+            bulletSpeed= 6;
             damage= 10;
             base.Start();
         }

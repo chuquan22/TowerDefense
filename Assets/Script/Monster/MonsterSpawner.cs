@@ -1,3 +1,4 @@
+﻿using Assets.Script;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,17 +17,18 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private Button btnPause;
     [SerializeField] private Text textPrice;
     [SerializeField] private GameObject[] hearts;
+    [SerializeField] private Button btnWave;
     [Header("Attributes")]
     [SerializeField] private int baseMonster = 8;
     [SerializeField] private float MonsterPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
     [SerializeField] private GameObject HP;
-    
+
     [Header("Events")]
     public static UnityEvent onMonsterDestroy = new UnityEvent();
 
-    private int currentWave = 1;
+    public static int currentWave = 1;
     private float timeSinceLastSpawn;
     private int monsterAlive;
     private int MonsterLeftToSpawn;
@@ -38,34 +40,49 @@ public class MonsterSpawner : MonoBehaviour
     public static bool isTowerSold = false;
     public static bool isUpgrade = false;
     public static bool isTowerBought = false;
+    private TMP_Text textWave;
 
+    public GameObject pauseMenu;
 
     int totalMonster = 0;
     private void Awake()
-    {   
-         onMonsterDestroy.AddListener(MonsterDestroyed);
-         textPrice.text = price.ToString();
-         index = MAX_INDEX_MONSTER;
+    {
+        onMonsterDestroy.AddListener(MonsterDestroyed);
+        textPrice.text = price.ToString();
+        index = MAX_INDEX_MONSTER;
+        textWave = btnWave.GetComponentInChildren<TMP_Text>();
     }
     private void Start()
     {
         StartCoroutine(StartWave());
         btnPause.onClick.AddListener(LoadPauseScene);
+        textWave.text = "Wave: " + currentWave;
     }
 
-    private void LoadPauseScene()
+    public void LoadPauseScene()
     {
-        SceneManager.LoadScene("PauseGame");
-        //Time.timeScale = 0f;
+        pauseMenu.GetComponent<GamePause>().SetPause();
+        // SceneManager.LoadScene("PauseGame");
     }
 
+    public void ResetGame()
+    {
+        price = 30;
+        Monster.maxHP = 30;
+        index = MAX_INDEX_MONSTER;
+        currentWave = 1;
 
+        foreach (GameObject h in hearts)
+        {
+            h.SetActive(true);
+        }
+    }
     private void Update()
     {
         // if monster passed
         if (Monster.isPassed)
         {
-            if(index >= 0)
+            if (index >= 0)
             {
                 hearts[index].SetActive(false);
                 index--;
@@ -74,7 +91,7 @@ public class MonsterSpawner : MonoBehaviour
         }
 
         // if player sell tower
-        if(isTowerSold)
+        if (isTowerSold)
         {
             textPrice.text = price.ToString();
             isTowerSold = false;
@@ -88,7 +105,7 @@ public class MonsterSpawner : MonoBehaviour
         }
 
         // if player buy tower
-        if(isTowerBought)
+        if (isTowerBought)
         {
             textPrice.text = price.ToString();
             isTowerBought = false;
@@ -99,13 +116,24 @@ public class MonsterSpawner : MonoBehaviour
         {
             LoadGameOverScene();
         }
+
+        // if pause game
+        if (pauseMenu.GetComponent<GamePause>().isPaused)
+        {
+            btnPause.gameObject.SetActive(false);
+        }
+        else
+        {
+            btnPause.gameObject.SetActive(true);
+        }
+
         if (!isSpawning)
         {
             return;
         }
         timeSinceLastSpawn += Time.deltaTime;
 
-        if(timeSinceLastSpawn >= (1f/MonsterPerSecond) && MonsterLeftToSpawn > 0)
+        if (timeSinceLastSpawn >= (1f / MonsterPerSecond) && MonsterLeftToSpawn > 0)
         {
             SpawnMonster();
             MonsterLeftToSpawn--;
@@ -113,15 +141,16 @@ public class MonsterSpawner : MonoBehaviour
             timeSinceLastSpawn = 0f;
         }
 
-        if(monsterAlive== 0 && MonsterLeftToSpawn ==0)
+        if (monsterAlive == 0 && MonsterLeftToSpawn == 0)
         {
             EndWave();
+            Invoke("NextWave",4f);
         }
 
         // if monster destroyed
-        if(Monster.isMonsterDestroyed)
+        if (Monster.isMonsterDestroyed)
         {
-            price = price + Monster.BONUS_PRICE_MONSTER;
+            price = price + Monster.PRICE;
             textPrice.text = price.ToString();
             Monster.isMonsterDestroyed = false;
         }
@@ -129,11 +158,41 @@ public class MonsterSpawner : MonoBehaviour
         // if monster fly destroyed
         if (MonsterFly.isMonsterFlyDestroyed)
         {
-            price = price + MonsterFly.BONUS_PRICE_MONSTER_FLY;
+            price = price + MonsterFly.PRICE;
             textPrice.text = price.ToString();
             MonsterFly.isMonsterFlyDestroyed = false;
         }
 
+        // if bug destroyed
+        if (MonsterBug.isMonsterBugDestroyed)
+        {
+            price = price + MonsterBug.PRICE;
+            textPrice.text = price.ToString();
+            MonsterBug.isMonsterBugDestroyed = false;
+        }
+
+        // if bee destroyed
+        if (MonsterBee.isMonsterBeeDestroyed)
+        {
+            price = price + MonsterBee.PRICE;
+            textPrice.text = price.ToString();
+            MonsterBee.isMonsterBeeDestroyed = false;
+        }
+
+        // if bone destroyed
+        if (MonsterBone.isMonsterBoneDestroyed)
+        {
+            price = price + MonsterBone.PRICE;
+            textPrice.text = price.ToString();
+            MonsterBone.isMonsterBoneDestroyed = false;
+        }
+
+    }
+
+    private void NextWave()
+    {
+        currentWave++;
+        textWave.text = "Wave: " + currentWave;
     }
 
     private void MonsterDestroyed()
@@ -152,7 +211,6 @@ public class MonsterSpawner : MonoBehaviour
         monster++;
         isSpawning = false;
         timeSinceLastSpawn = 0f;
-        currentWave++;
         StartCoroutine(StartWave());
     }
 
@@ -181,7 +239,11 @@ public class MonsterSpawner : MonoBehaviour
 
     private int MonsterPerWave()
     {
-        return Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
+        int baseMonsterCount = Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
+        int additionalHP = currentWave * 10; // Tăng maxHP của quái tấn công lên 10 sau mỗi lần quái được sinh ra
+        Monster.maxHP += additionalHP;
+        Debug.Log("Max HP :" + Monster.maxHP);
+        return baseMonsterCount;
     }
 
     private void LoadGameOverScene()

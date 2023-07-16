@@ -57,7 +57,11 @@ public class Plot : MonoBehaviour
             }
             else
             {
-                Debug.Log("Not Enough Price!");
+                NotificationManager.AddNotification(new Notification
+                {
+                    Title = "Warning",
+                    Message = "Not enough price to buy"
+                });
             }
         }
         

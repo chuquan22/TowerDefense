@@ -16,7 +16,7 @@ public class Monster : MonoBehaviour
     public float moveSpeed = 2f;
     private Animator animator;
     public static int maxHP = 30;
-    public const int BONUS_PRICE_MONSTER = 10;
+    public const int PRICE = 10;
     public static float currentHP;
 
     //public static int price = 0;
@@ -115,7 +115,7 @@ public class Monster : MonoBehaviour
         
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(int damage)
     {
         currentHP -= damage;
         slider.value -= damage;

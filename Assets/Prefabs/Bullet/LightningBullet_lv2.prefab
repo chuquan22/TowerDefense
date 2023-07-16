@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3317952682478385190}
   - component: {fileID: 644222449221733654}
   - component: {fileID: 8190598145760502533}
-  - component: {fileID: 4403876560701674990}
+  - component: {fileID: 8082855253230561575}
   m_Layer: 7
   m_Name: LightningBullet_lv2
   m_TagString: Untagged
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4403876560701674990
+--- !u!114 &8082855253230561575
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +164,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7685452497021466815}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c323d5705c594985baf8b84f94346, type: 3}
+  m_Script: {fileID: 11500000, guid: 0037913414c849c4aa9da8b14ba3396c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 8190598145760502533}
-  bulletSpeed: 6
-  damage: 40
+  bulletSpeed: 7
+  damage: 13

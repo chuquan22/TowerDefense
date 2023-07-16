@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3345297437692870941}
   - component: {fileID: 2296499191513532924}
   - component: {fileID: 2311771754883911839}
-  - component: {fileID: 4826372530286163124}
+  - component: {fileID: 8738572337744321480}
   m_Layer: 7
   m_Name: IceArrow
   m_TagString: Untagged
@@ -155,7 +155,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &4826372530286163124
+--- !u!114 &8738572337744321480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +164,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 494259006406644305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6c323d5705c594985baf8b84f94346, type: 3}
+  m_Script: {fileID: 11500000, guid: 0284e1ca0a5b0114093ae5600bdb0f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2296499191513532924}
   bulletSpeed: 5
-  damage: 10
+  damage: 20
