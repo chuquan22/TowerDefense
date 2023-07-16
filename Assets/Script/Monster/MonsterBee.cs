@@ -10,23 +10,24 @@ namespace Assets.Script
     public class MonsterBee : Monster
     {
         public static bool isMonsterBeeDestroyed = false;
-        public const int PRICE = 15;
-        public override void Start()
+        public override void Awake()
         {
-            moveSpeed = 2.5f;
-            base.Start();
+            value = ConfigUtils.GetBeeMonsterField();
+            base.Awake();
         }
 
-        public override void TakeDamage(int damage)
-        {
-            currentHP -= damage;
-            Debug.Log(currentHP);
-            if (currentHP <= 0)
-            {
-                MonsterSpawner.onMonsterDestroy.Invoke();
-                Destroy(gameObject);
-                isMonsterBeeDestroyed = true;
-            }
-        }
+        //public override void TakeDamage(int damage)
+        //{
+        //    audioMonsterHurt.Play();
+
+        //    currentHP -= damage;
+        //    Debug.Log(currentHP);
+        //    if (currentHP <= 0)
+        //    {
+        //        MonsterSpawner.onMonsterDestroy.Invoke();
+        //        Destroy(gameObject);
+        //        isMonsterBeeDestroyed = true;
+        //    }
+        //}
     }
 }
