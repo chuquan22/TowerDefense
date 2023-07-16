@@ -16,7 +16,7 @@ public class Plot : MonoBehaviour
     private Color startColor;
 
     private static Vector3 normal = new Vector3(1, 1, 1);
-    private static Vector3 focused = normal * 2;
+    private static Vector3 focused = normal * (2);
 
     private void Update()
     {

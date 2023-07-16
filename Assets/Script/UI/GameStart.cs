@@ -11,19 +11,20 @@ public class GameStart : MonoBehaviour
 
     void Start()
     {
-        buttonStart.onClick.AddListener(StartGame);
-        buttonQuit.onClick.AddListener(QuitGame);
+        //buttonStart.onClick.AddListener(StartGame);
+        //buttonQuit.onClick.AddListener(QuitGame);
     }
 
-    void StartGame()
+   public  void StartGame()
     {
         SceneManager.LoadScene("Quan");
     }
 
-    void QuitGame()
+    public void QuitGame()
     {
         // end program
-        UnityEditor.EditorApplication.isPlaying = false;
+      //  UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
 
 

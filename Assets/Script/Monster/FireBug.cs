@@ -10,25 +10,21 @@ namespace Assets.Script
     public class FireBug : Monster
     {
         public static bool isMonsterFlyDestroyed = false;
-        public const int BONUS_PRICE_MONSTER_FLY = 35;
-        public override void Start()
+        public override void Awake()
         {
-            maxHP = MonsterSpawner.currentWave * 10 + 150;
-            Debug.Log("CurrentWave: " + MonsterSpawner.currentWave);
-            Debug.Log("maxHP: " + maxHP);
-            base.Start();
+            value = ConfigUtils.GetFireBugMonsterField();
+            base.Awake();
         }
-
-        public override void TakeDamage(int damage)
-        {
-            maxHP -= damage;
-            Debug.Log(maxHP);
-            if (maxHP <= 0)
-            {
-                MonsterSpawner.onMonsterDestroy.Invoke();
-                Destroy(gameObject);
-                isMonsterFlyDestroyed = true;
-            }
-        }
+        //public override void TakeDamage(int damage)
+        //{
+        //    maxHP -= damage;
+        //    Debug.Log(maxHP);
+        //    if (maxHP <= 0)
+        //    {
+        //        MonsterSpawner.onMonsterDestroy.Invoke();
+        //        Destroy(gameObject);
+        //        isMonsterFlyDestroyed = true;
+        //    }
+        //}
     }
 }

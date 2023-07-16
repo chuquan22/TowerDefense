@@ -37,13 +37,11 @@ public class Bullet : MonoBehaviour
     {
         gameObject.SetActive(false);
         Monster monster = other.gameObject.GetComponent<Monster>();
-        MonsterFly monsterFly = other.gameObject.GetComponent<MonsterFly>();
+        //
+        //monsterFly = other.gameObject.GetComponent<MonsterFly>();
         if (monster != null)
         {
             monster.TakeDamage(damage);
-        }else if(monsterFly != null)
-        {
-            monsterFly.TakeDamage(damage);
         }
     }
 }

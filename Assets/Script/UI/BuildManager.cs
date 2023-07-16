@@ -13,10 +13,16 @@ public class BuildManager : MonoBehaviour
     private GameObject currentPlot;
 
 
+    private AudioSource audioBuildTower;
+
     private void Awake()
     {
         main = this;
         GameObject.Find("Menu").GetComponent<Animator>().SetBool("MenuOpen", false);
+
+
+        audioBuildTower = GameObject.Find("TowerBuild").GetComponent<AudioSource>();
+
     }
 
   
@@ -52,6 +58,8 @@ public class BuildManager : MonoBehaviour
             MonsterSpawner.price = MonsterSpawner.price - GetSelectedTower().cost;
             MonsterSpawner.isTowerBought = true;
             currentPlot.GetComponent<Plot>(). tower = Instantiate(GetSelectedTower().prefab,  currentPlot.transform.position,  Quaternion.identity);
+
+            audioBuildTower.Play();
            SetDefaultSelectedTower();
            
             //  gameObject.SetActive(false);

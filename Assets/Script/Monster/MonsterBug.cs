@@ -10,23 +10,25 @@ namespace Assets.Script
     public class MonsterBug : Monster
     {
         public static bool isMonsterBugDestroyed = false;
-        public const int PRICE = 20;
-        public override void Start()
+
+        public override void Awake()
         {
-            moveSpeed = 3f;
-            base.Start();
+            value = ConfigUtils.GetBugMonsterField();
+
+            base.Awake();
         }
 
-        public override void TakeDamage(int damage)
-        {
-            currentHP -= damage;
-            Debug.Log(currentHP);
-            if (currentHP <= 0)
-            {
-                MonsterSpawner.onMonsterDestroy.Invoke();
-                Destroy(gameObject);
-                isMonsterBugDestroyed = true;
-            }
-        }
+        //public override void TakeDamage(int damage)
+        //{
+        //    currentHP -= damage;
+        //audioMonsterHurt.Play();
+        //    Debug.Log(currentHP);
+        //    if (currentHP <= 0)
+        //    {
+        //        MonsterSpawner.onMonsterDestroy.Invoke();
+        //        Destroy(gameObject);
+        //        isMonsterBugDestroyed = true;
+        //    }
+        //}
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,12 @@ public static class ConfigUtils
     #endregion
 
     #region Monster Value
-    static MonsterField FlyMonster;
-    static MonsterField WalkMonster;
+    static MonsterField BeeMonster;
+    static MonsterField BoneMonster;
+    static MonsterField ScorpionMonster;
+    static MonsterField FireBugMonster;
+    static MonsterField BugMonster;
+    static MonsterField ButterflyMonster;
     #endregion
 
 
@@ -35,9 +40,29 @@ public static class ConfigUtils
         return LightTower;
     }
 
-    public static MonsterField GetMonsterFlyField()
+    public static MonsterField GetBeeMonsterField()
     {
-        return FlyMonster;
+        return BeeMonster;
+    }
+    public static MonsterField GetFireBugMonsterField()
+    {
+        return FireBugMonster;
+    }
+    public static MonsterField GetBugMonsterField()
+    {
+        return BugMonster;
+    }
+    public static MonsterField GetBoneMonsterField()
+    {
+        return BoneMonster;
+    }
+    public static MonsterField GetScorpionMonsterField()
+    {
+        return ScorpionMonster;
+    }
+    public static MonsterField GetButterflyMonsterField()
+    {
+        return ButterflyMonster;
     }
     #endregion
 
@@ -46,19 +71,41 @@ public static class ConfigUtils
     static ConfigIO io = ConfigIO.GetInstance();
     public static void InitializeData()
     {
-        InitIceTower();
+
+        try
+        {
+    InitIceTower();
         InitRockTower();
         InitShockTower();
         InitLightTower();
 
-        InitFlyMonster();
+        InitBeeMonster();
+        InitBoneMonster();
+        InitScorpionMonsterr();
+        InitFireBugMonster();
+        InitBugMonster();
+        InitButterflyMonster();
+
+
+        }
+        catch (Exception e)
+        {
+
+            NotificationManager.AddNotification(new Notification
+            {
+                Title = $"Init file Error",
+                Message = e.Message
+            });
+
+        }
+
     }
 
 
     static void InitIceTower()
     {
         string fileName = "IceTower.csv";
-        string filePath = "Tower";
+        string filePath = "/Tower";
 
         IceTower = io.ReadTowerIO(fileName: fileName, filePath: filePath);
 
@@ -83,7 +130,7 @@ public static class ConfigUtils
     static void InitRockTower()
     {
         string fileName = "RockTower.csv";
-        string filePath = "Tower";
+        string filePath = "/Tower";
 
         RockTower = io.ReadTowerIO(fileName: fileName, filePath: filePath);
 
@@ -94,7 +141,12 @@ public static class ConfigUtils
 
                 TargetingRange = 4,
                 RotationSpeed = 5,
-                Bps = 1
+                Bps = 1,
+
+                Cost = 20,
+                UpdateCost_lv2 = 40,
+                UpdateCost_lv3 = 80
+
             };
             io.CreateTowerIO(fileName: fileName, filePath: filePath, value);
             InitRockTower();
@@ -103,7 +155,7 @@ public static class ConfigUtils
     static void InitShockTower()
     {
         string fileName = "ShockTower.csv";
-        string filePath = "Tower";
+        string filePath = "/Tower";
 
         ShockTower = io.ReadTowerIO(fileName: fileName, filePath: filePath);
 
@@ -126,7 +178,7 @@ public static class ConfigUtils
     static void InitLightTower()
     {
         string fileName = "LightTower.csv";
-        string filePath = "Tower";
+        string filePath = "/Tower";
 
         LightTower = io.ReadTowerIO(fileName: fileName, filePath: filePath);
 
@@ -146,14 +198,14 @@ public static class ConfigUtils
             InitLightTower();
         }
     }
-    static void InitFlyMonster()
+    static void InitBeeMonster()
     {
-        string fileName = "FlyMonster.csv";
-        string filePath = "Monster";
+        string fileName = "BeeMonster.csv";
+        string filePath = "/Monster";
 
-        FlyMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+        BeeMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
 
-        if (FlyMonster == null)
+        if (BeeMonster == null)
         {
             MonsterField value = new MonsterField
             {
@@ -163,12 +215,115 @@ public static class ConfigUtils
                 Price = 10
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
-            InitFlyMonster();
+            InitBeeMonster();
+        }
+    }
+
+    static void InitBoneMonster()
+    {
+        string fileName = "BoneMonster.csv";
+        string filePath = "/Monster";
+
+        BoneMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+
+        if (BoneMonster == null)
+        {
+            MonsterField value = new MonsterField
+            {
+
+                MaxHP = 100,
+                MoveSpeed = 2f,
+                Price = 10
+            };
+            io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
+            InitBoneMonster();
         }
     }
 
 
+    static void InitScorpionMonsterr()
+    {
+        string fileName = "ScorpionMonster.csv";
+        string filePath = "/Monster";
 
+        ScorpionMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+
+        if (ScorpionMonster == null)
+        {
+            MonsterField value = new MonsterField
+            {
+
+                MaxHP = 100,
+                MoveSpeed = 2f,
+                Price = 10
+            };
+            io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
+            InitScorpionMonsterr();
+        }
+    }
+
+    static void InitFireBugMonster()
+    {
+        string fileName = "FireBugMonster.csv";
+        string filePath = "/Monster";
+
+        FireBugMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+
+        if (FireBugMonster == null)
+        {
+            MonsterField value = new MonsterField
+            {
+
+                MaxHP = 100,
+                MoveSpeed = 2f,
+                Price = 10
+            };
+            io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
+            InitFireBugMonster();
+        }
+    }
+
+
+    static void InitBugMonster()
+    {
+        string fileName = "BugMonster.csv";
+        string filePath = "/Monster";
+
+        BugMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+
+        if (BugMonster == null)
+        {
+            MonsterField value = new MonsterField
+            {
+
+                MaxHP = 100,
+                MoveSpeed = 2f,
+                Price = 10
+            };
+            io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
+            InitBugMonster();
+        }
+    }
+    static void InitButterflyMonster()
+    {
+        string fileName = "ButterflyMonster.csv";
+        string filePath = "/Monster";
+
+        ButterflyMonster = io.ReadMonsterIO(fileName: fileName, filePath: filePath);
+
+        if (ButterflyMonster == null)
+        {
+            MonsterField value = new MonsterField
+            {
+
+                MaxHP = 100,
+                MoveSpeed = 2f,
+                Price = 10
+            };
+            io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
+            InitButterflyMonster();
+        }
+    }
     #endregion 
 
 

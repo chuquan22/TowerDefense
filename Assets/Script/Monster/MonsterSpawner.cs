@@ -44,6 +44,8 @@ public class MonsterSpawner : MonoBehaviour
 
     public GameObject pauseMenu;
 
+    public AudioSource audioSpamMonster;
+
     int totalMonster = 0;
     private void Awake()
     {
@@ -68,7 +70,7 @@ public class MonsterSpawner : MonoBehaviour
     public void ResetGame()
     {
         price = 30;
-        Monster.maxHP = 30;
+        Monster.baseHP = 30;
         index = MAX_INDEX_MONSTER;
         currentWave = 1;
 
@@ -79,6 +81,8 @@ public class MonsterSpawner : MonoBehaviour
     }
     private void Update()
     {
+
+        GameObject.Find("txtPrice").GetComponent<Text>().text = price+"";
         // if monster passed
         if (Monster.isPassed)
         {
@@ -147,50 +151,52 @@ public class MonsterSpawner : MonoBehaviour
             Invoke("NextWave",4f);
         }
 
-        // if monster destroyed
-        if (Monster.isMonsterDestroyed)
-        {
-            price = price + Monster.PRICE;
-            textPrice.text = price.ToString();
-            Monster.isMonsterDestroyed = false;
-        }
+        //// if monster destroyed
+        //if (Monster.isMonsterDestroyed)
+        //{
+        //    price = price + Monster.PRICE;
+        //    textPrice.text = price.ToString();
+        //    Monster.isMonsterDestroyed = false;
+        //}
 
-        // if monster fly destroyed
-        if (MonsterFly.isMonsterFlyDestroyed)
-        {
-            price = price + MonsterFly.PRICE;
-            textPrice.text = price.ToString();
-            MonsterFly.isMonsterFlyDestroyed = false;
-        }
+        //// if monster fly destroyed
+        //if (MonsterFly.isMonsterFlyDestroyed)
+        //{
+        //    price = price + MonsterFly.PRICE;
+        //    textPrice.text = price.ToString();
+        //    MonsterFly.isMonsterFlyDestroyed = false;
+        //}
 
-        // if bug destroyed
-        if (MonsterBug.isMonsterBugDestroyed)
-        {
-            price = price + MonsterBug.PRICE;
-            textPrice.text = price.ToString();
-            MonsterBug.isMonsterBugDestroyed = false;
-        }
+        //// if bug destroyed
+        //if (MonsterBug.isMonsterBugDestroyed)
+        //{
+        //    price = price + MonsterBug.PRICE;
+        //    textPrice.text = price.ToString();
+        //    MonsterBug.isMonsterBugDestroyed = false;
+        //}
 
-        // if bee destroyed
-        if (MonsterBee.isMonsterBeeDestroyed)
-        {
-            price = price + MonsterBee.PRICE;
-            textPrice.text = price.ToString();
-            MonsterBee.isMonsterBeeDestroyed = false;
-        }
+        //// if bee destroyed
+        //if (MonsterBee.isMonsterBeeDestroyed)
+        //{
+        //    price = price + MonsterBee.PRICE;
+        //    textPrice.text = price.ToString();
+        //    MonsterBee.isMonsterBeeDestroyed = false;
+        //}
 
-        // if bone destroyed
-        if (MonsterBone.isMonsterBoneDestroyed)
-        {
-            price = price + MonsterBone.PRICE;
-            textPrice.text = price.ToString();
-            MonsterBone.isMonsterBoneDestroyed = false;
-        }
+        //// if bone destroyed
+        //if (MonsterBone.isMonsterBoneDestroyed)
+        //{
+        //    price = price + MonsterBone.PRICE;
+        //    textPrice.text = price.ToString();
+        //    MonsterBone.isMonsterBoneDestroyed = false;
+        //}
 
     }
 
     private void NextWave()
     {
+
+        audioSpamMonster.Play();
         currentWave++;
         textWave.text = "Wave: " + currentWave;
     }
@@ -234,15 +240,17 @@ public class MonsterSpawner : MonoBehaviour
         }
         Instantiate(prefabToWpawn, LevelManager.main.startPoint.GetComponent<Transform>().position, Quaternion.identity).name = "MonsterActive "+ totalMonster;
         totalMonster++;
-        
+     //   audioSpamMonster.Play();
+
+
     }
 
     private int MonsterPerWave()
     {
         int baseMonsterCount = Mathf.RoundToInt(baseMonster * Mathf.Pow(currentWave, difficultyScalingFactor));
         int additionalHP = currentWave * 10; // Tăng maxHP của quái tấn công lên 10 sau mỗi lần quái được sinh ra
-        Monster.maxHP += additionalHP;
-        Debug.Log("Max HP :" + Monster.maxHP);
+        Monster.baseHP += additionalHP;
+        Debug.Log("Max HP :" + Monster.baseHP);
         return baseMonsterCount;
     }
 

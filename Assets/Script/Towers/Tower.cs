@@ -31,16 +31,24 @@ public class Tower : MonoBehaviour
     //public List<GameObject> targets;
     public Tower main;
 
+
+
     
     public List<GameObject> bulletPool= new List<GameObject>();
     int maxPool=3;
     //int bulletIndex = 0;
 
+    private AudioSource audioSellTower;
 
+    private AudioSource audioTowerFight;
+    private AudioSource audioUpgardeTower;
 
     protected virtual void Start()
     {
-        
+        audioSellTower = GameObject.Find("TowerSell").GetComponent<AudioSource>();
+        audioTowerFight = GameObject.Find("TowerFight").GetComponent<AudioSource>();
+        audioUpgardeTower = GameObject.Find("TowerUpgrade").GetComponent<AudioSource>();
+
         bulletPool = new List<GameObject>();
 
         for (int i = 0; i < maxPool; i++)
@@ -56,7 +64,10 @@ public class Tower : MonoBehaviour
 
     GameObject NewABullet()
     {
-        return Instantiate(bulletPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+
+        GameObject bullet = Instantiate(bulletPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        bullet.name = gameObject.name + "_bullet_"+ bulletPool.Count;
+        return bullet;
     }
 
     protected virtual void Update()
@@ -94,7 +105,7 @@ public class Tower : MonoBehaviour
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg - 90f;
 
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
-
+        audioTowerFight.Play();
 
         GameObject bulletObj =null ;
 
@@ -180,6 +191,7 @@ public class Tower : MonoBehaviour
         Instantiate(tower, transform.position, Quaternion.identity);
         Destroy(gameObject);
         CloseUpgradeUI();
+        audioUpgardeTower.Play();
     }
 
     private int CaculateCostUpgrade()
@@ -236,7 +248,7 @@ public class Tower : MonoBehaviour
 
         Destroy(gameObject);
         Plot.main.gameObject.SetActive(true);
-
+        audioSellTower.Play();
         UIManager.main.SetHoveringState(false);
     }
 }

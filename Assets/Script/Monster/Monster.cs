@@ -13,11 +13,20 @@ public class Monster : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
-    public float moveSpeed = 2f;
+    
     private Animator animator;
-    public static int maxHP = 30;
-    public const int PRICE = 10;
-    public static float currentHP;
+
+    public static int baseHP = 30;
+    public MonsterField value = new MonsterField
+    {
+        MaxHP = 30,
+        MoveSpeed = 2f,
+        Price = 10
+    } ;
+    //public  int maxHP = 30;
+    //public float moveSpeed = 2f;
+    //public int PRICE  = 10;
+    public float currentHP;
 
     //public static int price = 0;
     private GameObject target;
@@ -30,25 +39,39 @@ public class Monster : MonoBehaviour
     Slider slider;
 
     public static bool isPassed = false;
+
+
+
+    public AudioSource audioMonsterHurt;
+    public AudioSource audioHeartDown;
+
     public void SetSpeed()
     {
-        currentSpeed = (float)(moveSpeed * 0.2);
+        currentSpeed = (float)(value. MoveSpeed * 0.2);
         Debug.Log(gameObject.name);
         time = 0;
     }
-    public void Awake()
+    public virtual void Awake()
     {
         main = this;
     }
-    public virtual void Start()
+    public void Start()
     {
-        currentHP = maxHP;
+     
+
+
+        currentHP = value.MaxHP;
         target = LevelManager.main.path[pathIndex];
         animator = GetComponent<Animator>();
         slider= GetComponentInChildren<Slider>();
-        slider.maxValue = maxHP;
+        slider.maxValue = value.MaxHP;
         slider.value = slider.maxValue;
         slider.minValue = 0;
+
+        audioMonsterHurt = GameObject.Find("MonsterHurt").GetComponent<AudioSource>();
+        audioHeartDown = GameObject.Find("HeartDown").GetComponent<AudioSource>();
+
+
     }
     private void Update()
     {
@@ -60,6 +83,7 @@ public class Monster : MonoBehaviour
             if (pathIndex == LevelManager.main.path.Length)
             {      
                 Player.currentHealth--;
+                audioHeartDown.Play();
                 isPassed = true;
                 MonsterSpawner.onMonsterDestroy.Invoke();      
                 Destroy(gameObject);
@@ -108,7 +132,7 @@ public class Monster : MonoBehaviour
         }
         else
         {
-            rb.velocity = direction * moveSpeed;
+            rb.velocity = direction * value.MoveSpeed;
             time = 0;
             currentSpeed= 0;
         }
@@ -120,11 +144,15 @@ public class Monster : MonoBehaviour
         currentHP -= damage;
         slider.value -= damage;
         Debug.Log(gameObject.name + ": "+  slider.value);
-        if(currentHP <= 0)
+        audioMonsterHurt.Play();
+        if (currentHP <= 0)
         {
-            MonsterSpawner.onMonsterDestroy.Invoke();
-            Destroy(gameObject);
-            isMonsterDestroyed = true;
+            //MonsterSpawner.onMonsterDestroy.Invoke();
+ MonsterSpawner.price += value.Price;
+             isMonsterDestroyed = true;
+
+            Destroy(gameObject, audioMonsterHurt.time);
+           
         }
     }
 
