@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterFly : Monster
 {
     public static bool isMonsterFlyDestroyed = false;
-    public const int BONUS_PRICE_MONSTER_FLY = 15;
+    public const int PRICE = 15;
     public override void Start()
     {
         moveSpeed = 4f;

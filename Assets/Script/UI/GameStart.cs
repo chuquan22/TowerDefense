@@ -17,7 +17,7 @@ public class GameStart : MonoBehaviour
 
     void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Quan");
     }
 
     void QuitGame()

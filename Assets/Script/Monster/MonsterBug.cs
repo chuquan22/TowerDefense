@@ -7,10 +7,10 @@ using UnityEngine;
 
 namespace Assets.Script
 {
-    public class Bug : Monster
+    public class MonsterBug : Monster
     {
-        public static bool isMonsterFlyDestroyed = false;
-        public const int BONUS_PRICE_MONSTER_FLY = 20;
+        public static bool isMonsterBugDestroyed = false;
+        public const int PRICE = 20;
         public override void Start()
         {
             moveSpeed = 3f;
@@ -25,7 +25,7 @@ namespace Assets.Script
             {
                 MonsterSpawner.onMonsterDestroy.Invoke();
                 Destroy(gameObject);
-                isMonsterFlyDestroyed = true;
+                isMonsterBugDestroyed = true;
             }
         }
     }
