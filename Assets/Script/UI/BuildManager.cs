@@ -11,7 +11,6 @@ public class BuildManager : MonoBehaviour
     [SerializeField] private TowerTest[] towers;
     private int selectedTower = -1;
     public GameObject currentPlot;
-    //public GameObject towerUpgrade;
 
     private AudioSource audioBuildTower;
 
@@ -49,13 +48,6 @@ public class BuildManager : MonoBehaviour
     }
     public void SetSeclectedTower(int _selectedTower)
     {
-        //if (towerUpgrade != null)
-        //{
-        //    currentPlot.GetComponent<Plot>().tower = Instantiate(towerUpgrade, currentPlot.transform.position, Quaternion.identity);
-        //    towerUpgrade = null;
-        //    return;
-        //}
-
         selectedTower = _selectedTower;
 
         GameObject.Find("Menu").GetComponent<Animator>().SetBool("MenuOpen", false);
