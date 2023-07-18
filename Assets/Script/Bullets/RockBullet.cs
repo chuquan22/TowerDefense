@@ -11,7 +11,7 @@ namespace Assets.Script.Towers
         public override void Start()
         {
             bulletSpeed = 4;
-            damage = 20;
+            damage = 15;
             base.Start();
         }
     }

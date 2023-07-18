@@ -9,11 +9,6 @@ public class GameStart : MonoBehaviour
     public Button buttonStart;
     public Button buttonQuit;
 
-    void Start()
-    {
-        //buttonStart.onClick.AddListener(StartGame);
-        //buttonQuit.onClick.AddListener(QuitGame);
-    }
 
    public  void StartGame()
     {
@@ -28,8 +23,4 @@ public class GameStart : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        
-    }
 }

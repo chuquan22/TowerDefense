@@ -14,6 +14,8 @@ public class ExceptionHandling : MonoBehaviour
     TextMeshProUGUI message;
     TextMeshProUGUI title;
 
+    NotificationManager notificationManager = NotificationManager.GetInstance();
+
      void Awake()
     {
         notificationUI = GameObject.Find("Notification");
@@ -32,7 +34,7 @@ public class ExceptionHandling : MonoBehaviour
     void Update()
     {
         //Camera.main.GetComponent
-        if (!notificationUI.activeSelf && NotificationManager.Count()>0)
+        if (!notificationUI.activeSelf && notificationManager.Count()>0)
         {
             ShowNotification();
 
@@ -49,7 +51,7 @@ public class ExceptionHandling : MonoBehaviour
     {
         //message = GameObject.Find("NotificationMessage").GetComponent<TextMeshProUGUI>();
         //title = GameObject.Find("NotificationTitle").GetComponent<TextMeshProUGUI>();
-        Notification notification =  NotificationManager.TakeNotification();
+        Notification notification = notificationManager.TakeNotification();
 
         title.text = notification.Title;
         message.text = notification.Message;

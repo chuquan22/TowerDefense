@@ -584,7 +584,7 @@ Transform:
   m_GameObject: {fileID: 6922874079956346840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6922874079668171760}
@@ -638,7 +638,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6777737489241667107, guid: dcbdef46b65b99f4a8bddaa78a234593, type: 3}
   firingPoint: {fileID: 701700046804356429}
   upgradeUI: {fileID: 6642469648047744141}
-  tower: {fileID: 3018285478765336393, guid: 9e15e3f2526cc6141bca97bd35d1d493, type: 3}
+  towerUpdate: {fileID: 3018285478765336393, guid: 9e15e3f2526cc6141bca97bd35d1d493, type: 3}
   level: 1
   main: {fileID: 0}
   bulletPool: []

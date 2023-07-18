@@ -40,7 +40,7 @@ public class BuildManager : MonoBehaviour
         return currentPlot;
     }
 
-    private void ResetPlot()
+    public void ResetPlot()
     {
         currentPlot.GetComponent<Plot>().blurPlot();
 
@@ -65,7 +65,7 @@ public class BuildManager : MonoBehaviour
         }
         else
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = "Warning",
                 Message = "Not enough price to buy"

@@ -509,8 +509,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6508514426886300490}
-  - component: {fileID: 8843608804675248140}
   - component: {fileID: 6348863120465097463}
+  - component: {fileID: 8843608804675248140}
   m_Layer: 0
   m_Name: LightningTower_lv2
   m_TagString: Untagged
@@ -536,6 +536,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6348863120465097463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6508514426886300488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd12e7e920a473745a29c1d2461310c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretRotationPoint: {fileID: 6508514425910735896}
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
+  bulletPrefab: {fileID: 8179045661409827740, guid: e3971a4353b7a394c9fd04c41fb7fa3c, type: 3}
+  firingPoint: {fileID: 6508514425910735896}
+  upgradeUI: {fileID: 1003901434279537403}
+  towerUpdate: {fileID: 3653016243060299450, guid: 762150f5e611d41478f810cece31eb10, type: 3}
+  level: 2
+  main: {fileID: 0}
+  bulletPool: []
 --- !u!61 &8843608804675248140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -562,28 +585,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.64251804, y: 1.3384411}
   m_EdgeRadius: 0
---- !u!114 &6348863120465097463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6508514426886300488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd12e7e920a473745a29c1d2461310c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretRotationPoint: {fileID: 6508514425910735896}
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletPrefab: {fileID: 7685452497021466815, guid: 6ec7ae076f1ad0246ad244bdfe2e9746, type: 3}
-  firingPoint: {fileID: 6508514425910735896}
-  upgradeUI: {fileID: 1003901434279537403}
-  tower: {fileID: 3653016243060299450, guid: 762150f5e611d41478f810cece31eb10, type: 3}
-  level: 2
-  bulletPool: []
 --- !u!1 &6508514427469989474
 GameObject:
   m_ObjectHideFlags: 0

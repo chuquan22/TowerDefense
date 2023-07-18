@@ -9,17 +9,13 @@ public class GameOver : MonoBehaviour
     public Button btnRestart;
     public Button btnMenu;
     public Button btnQuit;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //btnRestart.onClick.AddListener(Restart);
-        //btnMenu.onClick.AddListener(Menu);
-        //btnQuit.onClick.AddListener(Quit);
-    }
+    
 
     public void Restart()
     {
         SceneManager.LoadScene("Quan");
+        MonsterSpawner monster = new MonsterSpawner();
+        monster.ResetGame();
     }
 
     public void Menu()
@@ -32,9 +28,4 @@ public class GameOver : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

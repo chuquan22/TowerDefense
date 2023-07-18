@@ -91,7 +91,7 @@ public static class ConfigUtils
         catch (Exception e)
         {
 
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $"Init file Error",
                 Message = e.Message
@@ -231,9 +231,9 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 120,
-                MoveSpeed = 2f,
-                Price = 10
+                MaxHP = 250,
+                MoveSpeed = 3f,
+                Price = 15
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
             InitBoneMonster();
@@ -253,9 +253,9 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
-                MoveSpeed = 2f,
-                Price = 10
+                MaxHP = 200,
+                MoveSpeed = 2.5f,
+                Price = 8
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
             InitScorpionMonsterr();
@@ -274,9 +274,9 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 60,
-                MoveSpeed = 2f,
-                Price = 10
+                MaxHP = 100,
+                MoveSpeed = 2.3f,
+                Price = 8
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
             InitFireBugMonster();
@@ -296,8 +296,8 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 50,
-                MoveSpeed = 2f,
+                MaxHP = 70,
+                MoveSpeed = 2.5f,
                 Price = 10
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
@@ -317,8 +317,8 @@ public static class ConfigUtils
             {
 
                 MaxHP = 80,
-                MoveSpeed = 4f,
-                Price = 10
+                MoveSpeed = 3.5f,
+                Price = 8
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);
             InitButterflyMonster();

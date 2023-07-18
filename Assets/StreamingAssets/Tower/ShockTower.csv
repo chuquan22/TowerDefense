@@ -1,2 +1,2 @@
-TargetingRange,RotationSpeed,Bps, Cost, UpdateCost
-3,0,1,30,50
+TargetingRange,RotationSpeed,Bps, Cost, UpdateCost_lv2, UpdateCost_lv3
+3,0,1,30,50, 100

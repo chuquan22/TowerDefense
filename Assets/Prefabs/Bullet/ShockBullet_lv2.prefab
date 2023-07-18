@@ -118,7 +118,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 4534854369998045474}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -127,7 +127,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &-7623396976365825190
 CircleCollider2D:
@@ -142,9 +142,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048373938, y: 0}
+  m_Offset: {x: -0.009176493, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5828961
+  m_Radius: 3
 --- !u!114 &3893734284661083918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,5 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: -7023997412517277202}
-  bulletSpeed: 5
+  bulletSpeed: 0
   damage: 20

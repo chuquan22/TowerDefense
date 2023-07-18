@@ -11,16 +11,8 @@ namespace Assets.Script.Towers
         public override void Start()
         {
             bulletSpeed = 0;
-            damage = 5;
+            damage = 8;
             base.Start();
-        }
-
-        private void Update()
-        {
-            if (!target)
-            {
-                gameObject.SetActive(false);
-            }
         }
 
         private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
