@@ -13,7 +13,7 @@ public class Tower : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
     [SerializeField] private GameObject upgradeUI;
-    [SerializeField] private GameObject tower;
+    [SerializeField] private GameObject towerUpdate;
 
     [Header("Attribute")]
 
@@ -30,7 +30,6 @@ public class Tower : MonoBehaviour
     private float timeUntilFire;
     //public List<GameObject> targets;
     public Tower main;
-    public GameObject plot;
     private static GameObject SaveTower;
 
     
@@ -174,7 +173,7 @@ public class Tower : MonoBehaviour
     {
         if (CaculateCostUpgrade() > MonsterSpawner.price) 
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = "Warning",
                 Message = "Not enough price to upgrade"
@@ -184,16 +183,18 @@ public class Tower : MonoBehaviour
         int newPrice = MonsterSpawner.price - CaculateCostUpgrade();
         MonsterSpawner.price = newPrice;
         MonsterSpawner.isUpgrade = true;
-        if(level == 1)
+        value.Bps = CaculateBPS();
+        value.TargetingRange = CaculateRange();
+        Instantiate(towerUpdate, transform.position, Quaternion.identity);
+        if (level == 1)
         {
             SaveTower = gameObject;
             SaveTower.SetActive(false);
         }
-        level++;
-        value.Bps = CaculateBPS();
-        value.TargetingRange = CaculateRange();
-        Instantiate(tower, transform.position, Quaternion.identity);
-        
+        else
+        {
+            Destroy(gameObject);
+        }
         CloseUpgradeUI();
         audioUpgardeTower.Play();
     }
@@ -213,11 +214,11 @@ public class Tower : MonoBehaviour
 
     private float CaculateBPS()
     {
-        return value.Bps * Mathf.Pow(level, 0.5f);
+        return value.Bps * Mathf.Pow(level, 0.7f);
     }
     private float CaculateRange()
     {
-        return value.TargetingRange * Mathf.Pow(level, 0.4f);
+        return value.TargetingRange * Mathf.Pow(level, 0.5f);
     }
     public void OpenUpgradeUI()
     {

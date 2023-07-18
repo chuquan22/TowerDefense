@@ -23,7 +23,6 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private float MonsterPerSecond = 0.5f;
     [SerializeField] private float timeBetweenWaves = 5f;
     [SerializeField] private float difficultyScalingFactor = 0.75f;
-    [SerializeField] private GameObject HP;
 
     [Header("Events")]
     public static UnityEvent onMonsterDestroy = new UnityEvent();
@@ -77,10 +76,10 @@ public class MonsterSpawner : MonoBehaviour
         index = MAX_INDEX_MONSTER;
         currentWave = 1;
 
-        foreach (GameObject h in hearts)
-        {
-            h.SetActive(true);
-        }
+        //foreach (GameObject h in hearts)
+        //{
+        //    h.SetActive(true);
+        //}
     }
     private void Update()
     {

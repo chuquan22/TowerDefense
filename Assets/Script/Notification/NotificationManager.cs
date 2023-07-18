@@ -2,24 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class NotificationManager 
+public class NotificationManager 
 {
+ 
+  static  NotificationManager instance;
 
-    static Queue<Notification> listNotifications = new Queue<Notification>();
-    public static void Init()
+
+     Queue<Notification> listNotifications ;
+
+    NotificationManager()
     {
         listNotifications = new Queue<Notification>();
     }
 
-    public static void AddNotification(Notification notification)
+    public static NotificationManager GetInstance()
+    {
+        if(instance == null)
+        {
+            instance = new NotificationManager();
+        }
+        return  instance;
+    }
+
+    public  void AddNotification(Notification notification)
     {
         listNotifications.Enqueue(notification);
-    } public static Notification TakeNotification()
+    } public Notification TakeNotification()
     {
         return listNotifications.Dequeue();
     }
 
-    public static int Count() {
+    public int Count() {
        return  listNotifications.Count;
     }
 

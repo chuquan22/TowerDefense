@@ -12,13 +12,6 @@ public class GamePause : MonoBehaviour
     public GameObject image;
     public bool isPaused = false;
     // Start is called before the first frame update
-    void Start()
-    {
-        btnContinue.onClick.AddListener(Continue);
-        btnRestart.onClick.AddListener(Restart);
-        btnQuit.onClick.AddListener(QuitGame);
-        image.SetActive(false);
-    }
 
     public void Continue()
     {
@@ -39,7 +32,7 @@ public class GamePause : MonoBehaviour
     public void QuitGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("StartGame");
+        SceneManager.LoadScene("GameStart");
     }
 
     public void SetPause()

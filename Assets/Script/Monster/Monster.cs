@@ -25,10 +25,7 @@ public class Monster : MonoBehaviour
     };
 
     public float currentHP;
-
-    //public static int price = 0;
     private GameObject target;
-
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public static Monster main;

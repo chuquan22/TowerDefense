@@ -287,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.100548, y: 5.000046}
+  m_AnchoredPosition: {x: 41.9, y: 5}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5664297535055816706
@@ -433,7 +433,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.000000059604645, y: -0.08583766}
+  m_Offset: {x: -0.0017457306, y: -0.14824781}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -444,7 +444,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6486645, y: 0.8283247}
+  m_Size: {x: 0.6870708, y: 0.95314497}
   m_EdgeRadius: 0
 --- !u!114 &4699100808677136580
 MonoBehaviour:
@@ -465,8 +465,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 494259006406644305, guid: 5c8c989343266b449bce32ef9bd686dc, type: 3}
   firingPoint: {fileID: 1210050782814797331}
   upgradeUI: {fileID: 8489244044953766808}
-  tower: {fileID: 8352354381641748899, guid: 6eea3a20fce3d6946b33fdf2a7c2f7b4, type: 3}
+  towerUpdate: {fileID: 8352354381641748899, guid: 6eea3a20fce3d6946b33fdf2a7c2f7b4, type: 3}
   level: 1
+  main: {fileID: 0}
   bulletPool: []
 --- !u!1 &4903025473350806897
 GameObject:
@@ -673,7 +674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.099907, y: 2.0000088}
+  m_AnchoredPosition: {x: -39.3, y: 5.1}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8010663848017658693

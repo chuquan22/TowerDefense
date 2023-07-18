@@ -101,7 +101,7 @@ public class ConfigIO
         {
 
             //NotificationManager.AddNotification(new Notification { Title: "read tower " + fileName   ,  e.Message});
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $"read tower {fileName}",
                 Message = e.Message
@@ -139,8 +139,8 @@ public class ConfigIO
 
 
 
-                writer.WriteLine("TargetingRange,RotationSpeed,Bps, Cost, UpdateCost");
-                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps},{tower.Cost},{tower.UpdateCost_lv2}");
+                writer.WriteLine("TargetingRange,RotationSpeed,Bps, Cost, UpdateCost_lv2, UpdateCost_lv3");
+                writer.WriteLine($"{tower.TargetingRange},{tower.RotationSpeed},{tower.Bps},{tower.Cost},{tower.UpdateCost_lv2}, {tower.UpdateCost_lv3}");
             }
             else
             {
@@ -153,7 +153,7 @@ public class ConfigIO
                 catch (Exception e)
                 {
 
-                    NotificationManager.AddNotification(new Notification
+                    NotificationManager.GetInstance().AddNotification(new Notification
                     {
                         Title = $"create tower {fileName}",
                         Message = e.Message
@@ -171,7 +171,7 @@ public class ConfigIO
         }
         catch (Exception e)
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $"write tower {fileName}",
                 Message = e.Message
@@ -202,6 +202,7 @@ public class ConfigIO
             tower.Bps = float.Parse(values[2]);
             tower.Cost = int.Parse(values[3]);
             tower.UpdateCost_lv2 = int.Parse(values[4]);
+            tower.UpdateCost_lv3 = int.Parse(values[5]);
 
 
             //targetingRange = float.Parse(values[0]);
@@ -211,7 +212,7 @@ public class ConfigIO
         catch (Exception e)
         {
             Console.WriteLine(e);
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $" tower : value {csvValues}",
                 Message = e.Message
@@ -245,7 +246,7 @@ public class ConfigIO
         }
         catch (Exception e)
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $" Read Monster {fileName}",
                 Message = e.Message
@@ -293,7 +294,7 @@ public class ConfigIO
                 }
                 catch (Exception e)
                 {
-                    NotificationManager.AddNotification(new Notification
+                    NotificationManager.GetInstance() .AddNotification(new Notification
                     {
                         Title = $" create Monster {fileName}",
                         Message = e.Message
@@ -311,7 +312,7 @@ public class ConfigIO
         }
         catch (Exception e)
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $" Write Monster {fileName}",
                 Message = e.Message
@@ -343,7 +344,7 @@ public class ConfigIO
         }
         catch (Exception e)
         {
-            NotificationManager.AddNotification(new Notification
+            NotificationManager.GetInstance().AddNotification(new Notification
             {
                 Title = $"Monster: {csvValues}",
                 Message = e.Message

@@ -22878,7 +22878,6 @@ MonoBehaviour:
   MonsterPerSecond: 1
   timeBetweenWaves: 5
   difficultyScalingFactor: 1.2
-  HP: {fileID: 0}
   pauseMenu: {fileID: 907049853}
   audioSpamMonster: {fileID: 2096363123}
   audioHeartDown: {fileID: 0}
