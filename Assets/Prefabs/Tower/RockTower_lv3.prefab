@@ -280,6 +280,7 @@ MonoBehaviour:
   upgradeUI: {fileID: 6284377904135523278}
   tower: {fileID: 0}
   level: 3
+  main: {fileID: 0}
   bulletPool: []
 --- !u!1 &6284377904135523278
 GameObject:

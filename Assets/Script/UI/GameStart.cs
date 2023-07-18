@@ -23,7 +23,7 @@ public class GameStart : MonoBehaviour
     public void QuitGame()
     {
         // end program
-      //  UnityEditor.EditorApplication.isPlaying = false;
+       UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 

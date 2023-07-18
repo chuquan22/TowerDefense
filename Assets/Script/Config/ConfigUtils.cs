@@ -210,7 +210,7 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
+                MaxHP = 40,
                 MoveSpeed = 2f,
                 Price = 10
             };
@@ -231,7 +231,7 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
+                MaxHP = 120,
                 MoveSpeed = 2f,
                 Price = 10
             };
@@ -274,7 +274,7 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
+                MaxHP = 60,
                 MoveSpeed = 2f,
                 Price = 10
             };
@@ -296,7 +296,7 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
+                MaxHP = 50,
                 MoveSpeed = 2f,
                 Price = 10
             };
@@ -316,8 +316,8 @@ public static class ConfigUtils
             MonsterField value = new MonsterField
             {
 
-                MaxHP = 100,
-                MoveSpeed = 2f,
+                MaxHP = 80,
+                MoveSpeed = 4f,
                 Price = 10
             };
             io.CreateMonsterIO(fileName: fileName, filePath: filePath, monster: value);

@@ -9,9 +9,8 @@ public class BuildManager : MonoBehaviour
     [Header("References")]
     //[SerializeField] private GameObject[] towerPrefabs;
     [SerializeField] private TowerTest[] towers;
-    private int selectedTower =-1;
-    private GameObject currentPlot;
-
+    private int selectedTower = -1;
+    public GameObject currentPlot;
 
     private AudioSource audioBuildTower;
 
@@ -25,13 +24,13 @@ public class BuildManager : MonoBehaviour
 
     }
 
-  
+
     public TowerTest GetSelectedTower()
     {
-        return selectedTower<0 ? null: towers[selectedTower];
+        return selectedTower < 0 ? null : towers[selectedTower];
     }
 
-    public void setPlotSelected( GameObject p)
+    public void setPlotSelected(GameObject p)
     {
         currentPlot = p;
     }
@@ -57,11 +56,11 @@ public class BuildManager : MonoBehaviour
         {
             MonsterSpawner.price = MonsterSpawner.price - GetSelectedTower().cost;
             MonsterSpawner.isTowerBought = true;
-            currentPlot.GetComponent<Plot>(). tower = Instantiate(GetSelectedTower().prefab,  currentPlot.transform.position,  Quaternion.identity);
 
+            currentPlot.GetComponent<Plot>().tower = Instantiate(GetSelectedTower().prefab, currentPlot.transform.position, Quaternion.identity);
             audioBuildTower.Play();
-           SetDefaultSelectedTower();
-           
+            SetDefaultSelectedTower();
+
             //  gameObject.SetActive(false);
         }
         else

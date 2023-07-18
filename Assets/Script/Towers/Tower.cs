@@ -30,12 +30,12 @@ public class Tower : MonoBehaviour
     private float timeUntilFire;
     //public List<GameObject> targets;
     public Tower main;
-
-
+    public GameObject plot;
+    private static GameObject SaveTower;
 
     
     public List<GameObject> bulletPool= new List<GameObject>();
-    int maxPool=3;
+    int maxPool=7;
     //int bulletIndex = 0;
 
     private AudioSource audioSellTower;
@@ -113,7 +113,6 @@ public class Tower : MonoBehaviour
         {
             if ( !bullet.activeSelf)
             {
-
                 bulletObj = bullet;
                 break;
             }
@@ -185,11 +184,16 @@ public class Tower : MonoBehaviour
         int newPrice = MonsterSpawner.price - CaculateCostUpgrade();
         MonsterSpawner.price = newPrice;
         MonsterSpawner.isUpgrade = true;
+        if(level == 1)
+        {
+            SaveTower = gameObject;
+            SaveTower.SetActive(false);
+        }
         level++;
         value.Bps = CaculateBPS();
         value.TargetingRange = CaculateRange();
         Instantiate(tower, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        
         CloseUpgradeUI();
         audioUpgardeTower.Play();
     }
@@ -247,7 +251,7 @@ public class Tower : MonoBehaviour
         MonsterSpawner.isTowerSold = true;
 
         Destroy(gameObject);
-        Plot.main.gameObject.SetActive(true);
+        Destroy(SaveTower);
         audioSellTower.Play();
         UIManager.main.SetHoveringState(false);
     }

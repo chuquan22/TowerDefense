@@ -977,7 +977,7 @@ Transform:
   m_GameObject: {fileID: 8946976499225789358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.04, y: 0.36, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3288515416727071260}
@@ -1007,4 +1007,5 @@ MonoBehaviour:
   upgradeUI: {fileID: 307863676570324499}
   tower: {fileID: 2776086195229210746, guid: 53f67df4865f285408a047bc6fd8aa42, type: 3}
   level: 1
+  main: {fileID: 0}
   bulletPool: []
