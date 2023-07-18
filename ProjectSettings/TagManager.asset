@@ -50,6 +50,9 @@ TagManager:
   - name: Bullet
     uniqueID: 1232923699
     locked: 0
+  - name: Button
+    uniqueID: 2457736243
+    locked: 0
   - name: UI
     uniqueID: 1809542329
     locked: 0

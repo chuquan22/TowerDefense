@@ -53,7 +53,6 @@ public class Plot : MonoBehaviour
 
         if (GameObject.Find("Level").GetComponent<BuildManager>().getPlotSelected() == null && tower==null)
         {
-
             focusPlot();
         }
      
@@ -62,7 +61,6 @@ public class Plot : MonoBehaviour
     {
         if (GameObject.Find("Level").GetComponent<BuildManager>(). getPlotSelected()==null)
         {
-
             blurPlot();
         }
       
@@ -82,13 +80,9 @@ public class Plot : MonoBehaviour
             }
             else
             {
-
-
                 ShowUgradeMenu();
                 focusPlot();
                 GameObject.Find("Level").GetComponent<BuildManager>().setPlotSelected(gameObject);
-
-
             }
         }
 

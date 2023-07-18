@@ -8,12 +8,12 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Monster : MonoBehaviour
 {
-   
+
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private GameObject[] hearts;
     [Header("Attributes")]
-    
+
     private Animator animator;
 
     public static int baseHP = 30;
@@ -22,10 +22,8 @@ public class Monster : MonoBehaviour
         MaxHP = 30,
         MoveSpeed = 2f,
         Price = 10
-    } ;
-    //public  int maxHP = 30;
-    //public float moveSpeed = 2f;
-    //public int PRICE  = 10;
+    };
+
     public float currentHP;
 
     //public static int price = 0;
@@ -34,12 +32,12 @@ public class Monster : MonoBehaviour
     private int pathIndex = 0;
     public static bool isMonsterDestroyed = false;
     public static Monster main;
-    private float currentSpeed = 0;
-    private int time;
+    private float currentSpeed;
+    private bool isSlow;
     Slider slider;
 
     public static bool isPassed = false;
-
+    public float slowTime;
 
 
     public AudioSource audioMonsterHurt;
@@ -47,9 +45,9 @@ public class Monster : MonoBehaviour
 
     public void SetSpeed()
     {
-        currentSpeed = (float)(value. MoveSpeed * 0.2);
-        Debug.Log(gameObject.name);
-        time = 0;
+        slowTime = 3;
+        currentSpeed = value.MoveSpeed / 2;
+        isSlow = true;
     }
     public virtual void Awake()
     {
@@ -57,13 +55,11 @@ public class Monster : MonoBehaviour
     }
     public void Start()
     {
-     
-
-
+        isSlow= false;
         currentHP = value.MaxHP;
         target = LevelManager.main.path[pathIndex];
         animator = GetComponent<Animator>();
-        slider= GetComponentInChildren<Slider>();
+        slider = GetComponentInChildren<Slider>();
         slider.maxValue = value.MaxHP;
         slider.value = slider.maxValue;
         slider.minValue = 0;
@@ -75,17 +71,21 @@ public class Monster : MonoBehaviour
     }
     private void Update()
     {
-        
-        if(Vector2.Distance(target.GetComponent<Transform>().position, transform.position) <= 0.1f)
+        slowTime -= Time.deltaTime;
+        if(slowTime <0 )
         {
-            
-            pathIndex++; 
+            isSlow= false;
+        }
+        if (Vector2.Distance(target.GetComponent<Transform>().position, transform.position) <= 0.1f)
+        {
+
+            pathIndex++;
             if (pathIndex == LevelManager.main.path.Length)
-            {      
+            {
                 Player.currentHealth--;
                 audioHeartDown.Play();
                 isPassed = true;
-                MonsterSpawner.onMonsterDestroy.Invoke();      
+                MonsterSpawner.onMonsterDestroy.Invoke();
                 Destroy(gameObject);
                 return;
             }
@@ -95,7 +95,7 @@ public class Monster : MonoBehaviour
             }
             if (animator != null)
             {
-                if(transform.localScale.x < 0)
+                if (transform.localScale.x < 0)
                 {
                     transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
                 }
@@ -124,37 +124,34 @@ public class Monster : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 direction = (target.GetComponent<Transform>().position - transform.position).normalized;
-        if(currentSpeed > 0 && time <=10)
+        if (isSlow )
         {
             rb.velocity = direction * currentSpeed;
-            time++;
-            Debug.Log(gameObject.name +":"+ currentSpeed);
+
         }
         else
         {
             rb.velocity = direction * value.MoveSpeed;
-            time = 0;
-            currentSpeed= 0;
         }
-        
+
     }
 
     public virtual void TakeDamage(int damage)
     {
         currentHP -= damage;
         slider.value -= damage;
-        Debug.Log(gameObject.name + ": "+  slider.value);
+        Debug.Log(gameObject.name + ": " + slider.value +" HP");
         audioMonsterHurt.Play();
         if (currentHP <= 0)
         {
-            //MonsterSpawner.onMonsterDestroy.Invoke();
- MonsterSpawner.price += value.Price;
-             isMonsterDestroyed = true;
+            MonsterSpawner.onMonsterDestroy.Invoke();
+            MonsterSpawner.price += value.Price;
+            isMonsterDestroyed = true;
 
             Destroy(gameObject, audioMonsterHurt.time);
-           
+
         }
     }
 
-    
+
 }

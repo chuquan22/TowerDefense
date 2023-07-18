@@ -45,6 +45,7 @@ public class MonsterSpawner : MonoBehaviour
     public GameObject pauseMenu;
 
     public AudioSource audioSpamMonster;
+    public AudioSource audioHeartDown;
 
     int totalMonster = 0;
     private void Awake()
@@ -53,6 +54,8 @@ public class MonsterSpawner : MonoBehaviour
         textPrice.text = price.ToString();
         index = MAX_INDEX_MONSTER;
         textWave = btnWave.GetComponentInChildren<TMP_Text>();
+
+        audioHeartDown = GameObject.Find ("HeartDown").GetComponent<AudioSource> ();
     }
     private void Start()
     {
@@ -89,6 +92,8 @@ public class MonsterSpawner : MonoBehaviour
             if (index >= 0)
             {
                 hearts[index].SetActive(false);
+
+                audioHeartDown.Play();
                 index--;
             }
             Monster.isPassed = false;
@@ -148,48 +153,8 @@ public class MonsterSpawner : MonoBehaviour
         if (monsterAlive == 0 && MonsterLeftToSpawn == 0)
         {
             EndWave();
-            Invoke("NextWave",4f);
+            
         }
-
-        //// if monster destroyed
-        //if (Monster.isMonsterDestroyed)
-        //{
-        //    price = price + Monster.PRICE;
-        //    textPrice.text = price.ToString();
-        //    Monster.isMonsterDestroyed = false;
-        //}
-
-        //// if monster fly destroyed
-        //if (MonsterFly.isMonsterFlyDestroyed)
-        //{
-        //    price = price + MonsterFly.PRICE;
-        //    textPrice.text = price.ToString();
-        //    MonsterFly.isMonsterFlyDestroyed = false;
-        //}
-
-        //// if bug destroyed
-        //if (MonsterBug.isMonsterBugDestroyed)
-        //{
-        //    price = price + MonsterBug.PRICE;
-        //    textPrice.text = price.ToString();
-        //    MonsterBug.isMonsterBugDestroyed = false;
-        //}
-
-        //// if bee destroyed
-        //if (MonsterBee.isMonsterBeeDestroyed)
-        //{
-        //    price = price + MonsterBee.PRICE;
-        //    textPrice.text = price.ToString();
-        //    MonsterBee.isMonsterBeeDestroyed = false;
-        //}
-
-        //// if bone destroyed
-        //if (MonsterBone.isMonsterBoneDestroyed)
-        //{
-        //    price = price + MonsterBone.PRICE;
-        //    textPrice.text = price.ToString();
-        //    MonsterBone.isMonsterBoneDestroyed = false;
-        //}
 
     }
 
@@ -217,12 +182,13 @@ public class MonsterSpawner : MonoBehaviour
         monster++;
         isSpawning = false;
         timeSinceLastSpawn = 0f;
+        NextWave();
         StartCoroutine(StartWave());
     }
 
     private void SpawnMonster()
     {
-        Debug.Log("monster "+monster);
+        Debug.Log("monster " + monster);
         Monster prefabToWpawn;
         if (monster == MonsterPrefabs.Length)
         {
@@ -230,7 +196,7 @@ public class MonsterSpawner : MonoBehaviour
         }
         
 
-        if (MonsterLeftToSpawn <= currentWave)
+        if (MonsterLeftToSpawn <= currentWave && monster + 1 < MonsterPrefabs.Length)
         {
             prefabToWpawn = MonsterPrefabs[monster + 1];
         }
@@ -240,8 +206,8 @@ public class MonsterSpawner : MonoBehaviour
         }
         Instantiate(prefabToWpawn, LevelManager.main.startPoint.GetComponent<Transform>().position, Quaternion.identity).name = "MonsterActive "+ totalMonster;
         totalMonster++;
-     //   audioSpamMonster.Play();
-
+        audioSpamMonster.Play();
+        
 
     }
 

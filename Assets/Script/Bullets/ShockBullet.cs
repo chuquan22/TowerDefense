@@ -25,8 +25,11 @@ namespace Assets.Script.Towers
 
         private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
         {
-            
-            Monster.main.SetSpeed();
+           Monster[] m = collision.gameObject.GetComponents<Monster>();
+           foreach(Monster monster in m)
+            {
+                monster.SetSpeed();
+            }
         }
 
         public void HideBullet()

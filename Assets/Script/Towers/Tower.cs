@@ -30,12 +30,12 @@ public class Tower : MonoBehaviour
     private float timeUntilFire;
     //public List<GameObject> targets;
     public Tower main;
-
+    public GameObject plot;
 
 
     
     public List<GameObject> bulletPool= new List<GameObject>();
-    int maxPool=3;
+    int maxPool=7;
     //int bulletIndex = 0;
 
     private AudioSource audioSellTower;
@@ -113,7 +113,6 @@ public class Tower : MonoBehaviour
         {
             if ( !bullet.activeSelf)
             {
-
                 bulletObj = bullet;
                 break;
             }
@@ -188,6 +187,8 @@ public class Tower : MonoBehaviour
         level++;
         value.Bps = CaculateBPS();
         value.TargetingRange = CaculateRange();
+        //BuildManager.main.towerUpgrade = tower;
+        //BuildManager.main.SetSeclectedTower(1);
         Instantiate(tower, transform.position, Quaternion.identity);
         Destroy(gameObject);
         CloseUpgradeUI();

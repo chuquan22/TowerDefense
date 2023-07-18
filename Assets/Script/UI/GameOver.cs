@@ -12,22 +12,22 @@ public class GameOver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        btnRestart.onClick.AddListener(Restart);
-        btnMenu.onClick.AddListener(Menu);
-        btnQuit.onClick.AddListener(Quit);
+        //btnRestart.onClick.AddListener(Restart);
+        //btnMenu.onClick.AddListener(Menu);
+        //btnQuit.onClick.AddListener(Quit);
     }
 
-    void Restart()
+    public void Restart()
     {
         SceneManager.LoadScene("Quan");
     }
 
-    void Menu()
+    public void Menu()
     {
-        SceneManager.LoadScene("StartGame");
+        SceneManager.LoadScene("GameStart");
     }
 
-    void Quit()
+    public void Quit()
     {
         UnityEditor.EditorApplication.isPlaying = false;
     }
